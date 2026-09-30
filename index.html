@@ -15,9 +15,90 @@ h1{font-size:1.7rem}
 .cd{display:flex;gap:12px;align-items:center;flex-wrap:wrap}
 .big{font:700 3rem/1 Fraunces,Georgia,serif;color:var(--ac)}
 .mut{color:var(--mut);font-size:.9rem}
-nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);border-bottom:1px solid var(--ln);display:flex;overflow-x:auto;gap:4px;padding:8px 12px}
-nav button{flex:none;border:0;background:none;color:var(--mut);font:500 .95rem "DM Sans",sans-serif;padding:8px 14px;border-radius:20px;cursor:pointer}
-nav button.on{background:var(--ac);color:#fff}
+nav{
+  position:sticky;
+  top:env(safe-area-inset-top,0px);
+  z-index:5;
+  background:var(--bg);
+  border-bottom:1px solid var(--ln);
+
+  display:flex;
+  justify-content:center;
+  gap:4px;
+
+  overflow-x:auto;
+  padding:8px 12px;
+
+  scrollbar-width:none;
+}
+
+nav::-webkit-scrollbar{
+  display:none;
+}
+
+nav button{
+  flex:none;
+  border:0;
+  background:none;
+  color:var(--mut);
+  font:500 .95rem "DM Sans",sans-serif;
+  padding:8px 14px;
+  border-radius:20px;
+  cursor:pointer;
+}
+
+nav button.on{
+  background:var(--ac);
+  color:#fff;
+}
+
+/* Camadas de fade */
+nav::before,
+nav::after{
+  content:"";
+  position:absolute;
+  top:0;
+  bottom:0;
+  width:28px;
+  pointer-events:none;
+  opacity:0;
+  transition:opacity .2s ease;
+}
+
+/* Fade da esquerda */
+nav::before{
+  left:0;
+  background:linear-gradient(
+    to right,
+    var(--bg),
+    transparent
+  );
+}
+
+/* Fade da direita */
+nav::after{
+  right:0;
+  background:linear-gradient(
+    to left,
+    var(--bg),
+    transparent
+  );
+}
+
+/* Estados controlados pelo JavaScript */
+nav.fade-left::before{
+  opacity:1;
+}
+
+nav.fade-right::after{
+  opacity:1;
+}
+
+@media(max-width:720px){
+  nav{
+    justify-content:flex-start;
+  }
+}
 main{max-width:720px;margin:auto;padding:16px}
 section{display:none}section.on{display:block}
 .card{background:var(--card);border:1px solid var(--ln);border-radius:14px;padding:14px 16px;margin-bottom:12px}
