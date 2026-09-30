@@ -1,20 +1,95 @@
 <!doctype html>
-<html lang="pt-BR"><head><meta charset="utf-8">
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Plano Fuvest 2028</title>
+
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+
 <style>
-:root{--bg:#f4f3fa;--card:#fff;--ink:#1f1b3a;--mut:#6b6788;--ac:#5b4bdb;--ac2:#f0b44c;--ok:#2e9e6b;--ln:#e2e0f0;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
-@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#15132a;--card:#1f1c3a;--ink:#ece9ff;--mut:#a29fc4;--ac:#8f83ff;--ln:#322f55}}
-:root[data-theme="dark"]{--bg:#15132a;--card:#1f1c3a;--ink:#ece9ff;--mut:#a29fc4;--ac:#8f83ff;--ln:#322f55}
-*{box-sizing:border-box}html{scroll-padding-top:env(safe-area-inset-top,0px)}
-body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 "DM Sans",system-ui,sans-serif}
-h1,h2,h3{font-family:Fraunces,Georgia,serif;line-height:1.2;margin:0 0 .5em}
-header{padding:20px 16px 8px;max-width:720px;margin:auto}
+:root{
+  --bg:#f4f3fa;
+  --card:#fff;
+  --ink:#1f1b3a;
+  --mut:#6b6788;
+  --ac:#5b4bdb;
+  --ac2:#f0b44c;
+  --ok:#2e9e6b;
+  --ln:#e2e0f0;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px)
+}
+
+@media(prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#15132a;
+    --card:#1f1c3a;
+    --ink:#ece9ff;
+    --mut:#a29fc4;
+    --ac:#8f83ff;
+    --ln:#322f55
+  }
+}
+
+:root[data-theme="dark"]{
+  --bg:#15132a;
+  --card:#1f1c3a;
+  --ink:#ece9ff;
+  --mut:#a29fc4;
+  --ac:#8f83ff;
+  --ln:#322f55
+}
+
+*{box-sizing:border-box}
+
+html{
+  scroll-padding-top:env(safe-area-inset-top,0px)
+}
+
+body{
+  margin:0;
+  background:var(--bg);
+  color:var(--ink);
+  font:16px/1.55 "DM Sans",system-ui,sans-serif
+}
+
+h1,h2,h3{
+  font-family:Fraunces,Georgia,serif;
+  line-height:1.2;
+  margin:0 0 .5em
+}
+
+header{
+  padding:20px 16px 8px;
+  max-width:720px;
+  margin:auto
+}
+
 h1{font-size:1.7rem}
-.cd{display:flex;gap:12px;align-items:center;flex-wrap:wrap}
-.big{font:700 3rem/1 Fraunces,Georgia,serif;color:var(--ac)}
-.mut{color:var(--mut);font-size:.9rem}
+
+.cd{
+  display:flex;
+  gap:12px;
+  align-items:center;
+  flex-wrap:wrap
+}
+
+.big{
+  font:700 3rem/1 Fraunces,Georgia,serif;
+  color:var(--ac)
+}
+
+.mut{
+  color:var(--mut);
+  font-size:.9rem
+}
+
+/* =========================
+   NAVEGAÇÃO
+   ========================= */
+
 nav{
   position:sticky;
   top:env(safe-area-inset-top,0px);
@@ -52,7 +127,7 @@ nav button.on{
   color:#fff;
 }
 
-/* Camadas de fade */
+/* Fade refinado */
 nav::before,
 nav::after{
   content:"";
@@ -65,7 +140,6 @@ nav::after{
   transition:opacity .2s ease;
 }
 
-/* Fade da esquerda */
 nav::before{
   left:0;
   background:linear-gradient(
@@ -75,7 +149,6 @@ nav::before{
   );
 }
 
-/* Fade da direita */
 nav::after{
   right:0;
   background:linear-gradient(
@@ -85,7 +158,6 @@ nav::after{
   );
 }
 
-/* Estados controlados pelo JavaScript */
 nav.fade-left::before{
   opacity:1;
 }
@@ -99,189 +171,2786 @@ nav.fade-right::after{
     justify-content:flex-start;
   }
 }
-main{max-width:720px;margin:auto;padding:16px}
-section{display:none}section.on{display:block}
-.card{background:var(--card);border:1px solid var(--ln);border-radius:14px;padding:14px 16px;margin-bottom:12px}
-.bar{height:8px;background:var(--ln);border-radius:8px;overflow:hidden;margin:6px 0}
-.bar i{display:block;height:100%;background:var(--ok);width:0;transition:width .3s}
-label.ck{display:flex;gap:10px;align-items:flex-start;padding:5px 0;cursor:pointer}
-input[type=checkbox]{width:20px;height:20px;accent-color:var(--ac);flex:none;margin-top:2px}
-details{background:var(--card);border:1px solid var(--ln);border-radius:14px;margin-bottom:10px;padding:0 16px}
-summary{padding:14px 0;cursor:pointer;font-weight:700;display:flex;justify-content:space-between;gap:8px}
-details[open] summary{border-bottom:1px solid var(--ln);margin-bottom:8px}
-details>div{padding-bottom:10px}
-.tag{display:inline-block;background:var(--ac2);color:#3a2a00;border-radius:6px;padding:0 8px;font-size:.8rem;font-weight:700}
-table{width:100%;border-collapse:collapse;font-size:.92rem}
-td,th{padding:8px 6px;border-bottom:1px solid var(--ln);text-align:left;vertical-align:top}
+
+/* =========================
+   ESTRUTURA
+   ========================= */
+
+main{
+  max-width:720px;
+  margin:auto;
+  padding:16px
+}
+
+section{display:none}
+
+section.on{display:block}
+
+.card{
+  background:var(--card);
+  border:1px solid var(--ln);
+  border-radius:14px;
+  padding:14px 16px;
+  margin-bottom:12px
+}
+
+.bar{
+  height:8px;
+  background:var(--ln);
+  border-radius:8px;
+  overflow:hidden;
+  margin:6px 0
+}
+
+.bar i{
+  display:block;
+  height:100%;
+  background:var(--ok);
+  width:0;
+  transition:width .3s
+}
+
+label.ck{
+  display:flex;
+  gap:10px;
+  align-items:flex-start;
+  padding:5px 0;
+  cursor:pointer
+}
+
+input[type=checkbox]{
+  width:20px;
+  height:20px;
+  accent-color:var(--ac);
+  flex:none;
+  margin-top:2px
+}
+
+details{
+  background:var(--card);
+  border:1px solid var(--ln);
+  border-radius:14px;
+  margin-bottom:10px;
+  padding:0 16px
+}
+
+summary{
+  padding:14px 0;
+  cursor:pointer;
+  font-weight:700;
+  display:flex;
+  justify-content:space-between;
+  gap:8px
+}
+
+details[open] summary{
+  border-bottom:1px solid var(--ln);
+  margin-bottom:8px
+}
+
+details>div{
+  padding-bottom:10px
+}
+
+.tag{
+  display:inline-block;
+  background:var(--ac2);
+  color:#3a2a00;
+  border-radius:6px;
+  padding:0 8px;
+  font-size:.8rem;
+  font-weight:700
+}
+
+table{
+  width:100%;
+  border-collapse:collapse;
+  font-size:.92rem
+}
+
+td,th{
+  padding:8px 6px;
+  border-bottom:1px solid var(--ln);
+  text-align:left;
+  vertical-align:top
+}
+
 .sc{overflow-x:auto}
-input[type=date]{font:inherit;padding:4px 8px;border-radius:8px;border:1px solid var(--ln);background:var(--card);color:var(--ink)}
-.switch{display:flex;gap:8px;flex-wrap:wrap;margin:.5em 0}
-.switch button{border:1px solid var(--ln);background:var(--card);color:var(--ink);padding:8px 12px;border-radius:10px;cursor:pointer;font:500 .95rem "DM Sans",sans-serif}
-.switch button.on{background:var(--ac);border-color:var(--ac);color:#fff}
+
+input[type=date]{
+  font:inherit;
+  padding:4px 8px;
+  border-radius:8px;
+  border:1px solid var(--ln);
+  background:var(--card);
+  color:var(--ink)
+}
+
+.switch{
+  display:flex;
+  gap:8px;
+  flex-wrap:wrap;
+  margin:.5em 0
+}
+
+.switch button{
+  border:1px solid var(--ln);
+  background:var(--card);
+  color:var(--ink);
+  padding:8px 12px;
+  border-radius:10px;
+  cursor:pointer;
+  font:500 .95rem "DM Sans",sans-serif
+}
+
+.switch button.on{
+  background:var(--ac);
+  border-color:var(--ac);
+  color:#fff
+}
 
 li{margin-bottom:6px}
-:focus-visible{outline:3px solid var(--ac2);outline-offset:2px}
 
-.auth-wrap{max-width:720px;margin:0 auto;padding:0 16px}.auth{background:var(--card);border:1px solid var(--ln);border-radius:14px;padding:14px 16px;margin-bottom:10px}.auth-row{display:flex;gap:8px;flex-wrap:wrap}.auth input[type=email],.auth input[type=password]{font:inherit;padding:9px 10px;border-radius:9px;border:1px solid var(--ln);background:var(--card);color:var(--ink);min-width:220px;flex:1}.auth button,.switch button{border:1px solid var(--ln);background:var(--card);color:var(--ink);font:600 .9rem "DM Sans",sans-serif;padding:9px 12px;border-radius:9px;cursor:pointer}.auth button.primary,.switch button.on{background:var(--ac);border-color:var(--ac);color:#fff}.auth .status{margin-top:8px;font-size:.9rem;color:var(--mut)}.auth .danger{color:#b33}.switch{display:flex;gap:8px;flex-wrap:wrap;margin:10px 0}.syncdot{display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--ok);margin-right:6px}.syncdot.off{background:var(--ac2)}</style></head><body>
+:focus-visible{
+  outline:3px solid var(--ac2);
+  outline-offset:2px
+}
+
+/* =========================
+   AUTENTICAÇÃO
+   ========================= */
+
+.auth-wrap{
+  max-width:720px;
+  margin:0 auto;
+  padding:0 16px
+}
+
+.auth{
+  background:var(--card);
+  border:1px solid var(--ln);
+  border-radius:14px;
+  padding:14px 16px;
+  margin-bottom:10px
+}
+
+.auth-row{
+  display:flex;
+  gap:8px;
+  flex-wrap:wrap
+}
+
+.auth input[type=email],
+.auth input[type=password]{
+  font:inherit;
+  padding:9px 10px;
+  border-radius:9px;
+  border:1px solid var(--ln);
+  background:var(--card);
+  color:var(--ink);
+  min-width:220px;
+  flex:1
+}
+
+.auth button,
+.switch button{
+  border:1px solid var(--ln);
+  background:var(--card);
+  color:var(--ink);
+  font:600 .9rem "DM Sans",sans-serif;
+  padding:9px 12px;
+  border-radius:9px;
+  cursor:pointer
+}
+
+.auth button.primary,
+.switch button.on{
+  background:var(--ac);
+  border-color:var(--ac);
+  color:#fff
+}
+
+.auth .status{
+  margin-top:8px;
+  font-size:.9rem;
+  color:var(--mut)
+}
+
+.auth .danger{
+  color:#b33
+}
+
+.switch{
+  display:flex;
+  gap:8px;
+  flex-wrap:wrap;
+  margin:10px 0
+}
+
+.syncdot{
+  display:inline-block;
+  width:8px;
+  height:8px;
+  border-radius:50%;
+  background:var(--ok);
+  margin-right:6px
+}
+
+.syncdot.off{
+  background:var(--ac2)
+}
+
+/* =========================
+   LEMBRETES
+   ========================= */
+
+.reminder-form{
+  display:flex;
+  flex-direction:column;
+  gap:10px
+}
+
+.reminder-form textarea{
+  width:100%;
+  min-height:110px;
+  resize:vertical;
+  font:inherit;
+  line-height:1.5;
+  padding:11px 12px;
+  border-radius:10px;
+  border:1px solid var(--ln);
+  background:var(--card);
+  color:var(--ink)
+}
+
+.reminder-form button{
+  align-self:flex-start;
+  border:1px solid var(--ac);
+  background:var(--ac);
+  color:#fff;
+  font:600 .95rem "DM Sans",sans-serif;
+  padding:9px 14px;
+  border-radius:9px;
+  cursor:pointer
+}
+
+.reminder-list{
+  display:flex;
+  flex-direction:column;
+  gap:10px
+}
+
+.reminder{
+  background:var(--card);
+  border:1px solid var(--ln);
+  border-radius:14px;
+  padding:14px 16px;
+  transition:opacity .2s ease
+}
+
+.reminder.done{
+  opacity:.6
+}
+
+.reminder.done .reminder-text{
+  text-decoration:line-through
+}
+
+.reminder-top{
+  display:flex;
+  align-items:flex-start;
+  gap:10px
+}
+
+.reminder-check{
+  width:20px;
+  height:20px;
+  margin-top:3px;
+  accent-color:var(--ac);
+  flex:none
+}
+
+.reminder-text{
+  flex:1;
+  white-space:pre-wrap;
+  overflow-wrap:anywhere
+}
+
+.reminder-date{
+  margin-top:8px;
+  color:var(--mut);
+  font-size:.8rem
+}
+
+.reminder-actions{
+  display:flex;
+  gap:6px;
+  margin-top:10px;
+  flex-wrap:wrap
+}
+
+.reminder-actions button{
+  border:1px solid var(--ln);
+  background:var(--card);
+  color:var(--ink);
+  font:500 .82rem "DM Sans",sans-serif;
+  padding:6px 9px;
+  border-radius:8px;
+  cursor:pointer
+}
+
+.reminder-actions button.danger{
+  color:#b33;
+}
+
+.reminder-empty{
+  text-align:center;
+  padding:28px 16px;
+  color:var(--mut)
+}
+
+.reminder-counter{
+  margin-left:auto;
+  font-size:.85rem;
+  color:var(--mut)
+}
+</style>
+</head>
+
+<body>
+
 <header>
-<h1>Plano Fuvest 2028</h1>
-<div class="cd"><div class="big" id="dias">–</div><div><div>dias para a prova</div>
-<div class="mut">Data estimada: <input type="date" id="alvo" aria-label="Data da prova"> (ajuste quando sair o edital)</div></div></div>
-<div class="bar" aria-hidden="true"><i id="gb"></i></div><div class="mut" id="gt"></div>
+  <h1>Plano Fuvest 2028</h1>
+
+  <div class="cd">
+    <div class="big" id="dias">–</div>
+
+    <div>
+      <div>dias para a prova</div>
+
+      <div class="mut">
+        Data estimada:
+        <input type="date" id="alvo" aria-label="Data da prova">
+        (ajuste quando sair o edital)
+      </div>
+    </div>
+  </div>
+
+  <div class="bar" aria-hidden="true">
+    <i id="gb"></i>
+  </div>
+
+  <div class="mut" id="gt"></div>
 </header>
+
 <div id="auth" class="auth-wrap"></div>
+
 <nav id="nav"></nav>
+
 <main>
-<section id="hoje"></section><section id="sem"></section><section id="fases"></section>
-<section id="mat"></section><section id="car"></section><section id="red"></section><section id="lei"></section><section id="dic"></section>
+  <section id="hoje"></section>
+  <section id="sem"></section>
+  <section id="fases"></section>
+  <section id="mat"></section>
+  <section id="car"></section>
+  <section id="red"></section>
+  <section id="lei"></section>
+  <section id="lem"></section>
+  <section id="dic"></section>
 </main>
+
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
 <script>
-/* CONFIGURAÇÃO SUPABASE
-   1. Crie um projeto em https://supabase.com
-   2. Em Project Settings > API, copie Project URL e Publishable/anon key.
-   3. Cole-os abaixo. NUNCA coloque a service_role key neste arquivo.
+
+/* =========================================================
+   CONFIGURAÇÃO SUPABASE
+   =========================================================
+
+   NUNCA coloque a service_role key aqui.
+
+   A chave abaixo deve ser Publishable/anon.
 */
+
 const SUPABASE_URL = "https://xdmpvreubsykorrvdnrb.supabase.co";
 const SUPABASE_ANON_KEY = "sb_publishable_Ttu2D97h8ESYDuPOYSBqJQ_tGR6m4M0";
 
 const cloudConfigured =
   SUPABASE_URL.startsWith("https://") &&
   SUPABASE_ANON_KEY.startsWith("sb_");
-const sb = cloudConfigured ? window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY) : null;
-let cloudReady=false, cloudSaving=false, saveTimer=null;
-const $=s=>document.querySelector(s);
-let S={d:{},t:"2027-11-14",c:"mus"};
-try{S=Object.assign(S,JSON.parse(localStorage.getItem("fv28")||"{}"))}catch(e){}
-const localSave=()=>{try{localStorage.setItem("fv28",JSON.stringify(S))}catch(e){}};
-const save=()=>{localSave(); scheduleCloudSave();};
-function scheduleCloudSave(){ if(!cloudReady || !sb) return; clearTimeout(saveTimer); saveTimer=setTimeout(saveCloud,450); }
+
+const sb = cloudConfigured
+  ? window.supabase.createClient(
+      SUPABASE_URL,
+      SUPABASE_ANON_KEY
+    )
+  : null;
+
+
+/* =========================================================
+   ESTADO
+   ========================================================= */
+
+let cloudReady = false;
+let cloudSaving = false;
+let saveTimer = null;
+
+const $ = s => document.querySelector(s);
+
+let S = {
+  d:{},
+  t:"2027-11-14",
+  c:"mus",
+  r:[]
+};
+
+try{
+  S = Object.assign(
+    {
+      d:{},
+      t:"2027-11-14",
+      c:"mus",
+      r:[]
+    },
+    JSON.parse(localStorage.getItem("fv28") || "{}")
+  );
+}catch(e){}
+
+if(!S.d || typeof S.d !== "object"){
+  S.d = {};
+}
+
+if(!Array.isArray(S.r)){
+  S.r = [];
+}
+
+
+/* =========================================================
+   SALVAMENTO
+   ========================================================= */
+
+const localSave = () => {
+  try{
+    localStorage.setItem("fv28",JSON.stringify(S));
+  }catch(e){}
+};
+
+const save = () => {
+  localSave();
+  scheduleCloudSave();
+};
+
+function scheduleCloudSave(){
+  if(!cloudReady || !sb)return;
+
+  clearTimeout(saveTimer);
+
+  saveTimer = setTimeout(
+    saveCloud,
+    450
+  );
+}
+
 async function saveCloud(){
-  if(!cloudReady || !sb || cloudSaving) return;
-  cloudSaving=true; setSync("Salvando…",true);
-  const {data:{user}}=await sb.auth.getUser();
-  if(!user){cloudSaving=false;return;}
-  const {error}=await sb.from("study_progress").upsert({user_id:user.id,data:S.d,target_date:S.t,career:S.c,updated_at:new Date().toISOString()},{onConflict:"user_id"});
-  cloudSaving=false; setSync(error?"Erro ao sincronizar":"Sincronizado",!error);
-  if(error) console.error(error);
+
+  if(!cloudReady || !sb || cloudSaving)return;
+
+  cloudSaving = true;
+
+  setSync("Salvando…",true);
+
+  const {
+    data:{user}
+  } = await sb.auth.getUser();
+
+  if(!user){
+    cloudSaving = false;
+    return;
+  }
+
+  const {
+    error
+  } = await sb
+    .from("study_progress")
+    .upsert(
+      {
+        user_id:user.id,
+        data:S.d,
+        target_date:S.t,
+        career:S.c,
+        updated_at:new Date().toISOString()
+      },
+      {
+        onConflict:"user_id"
+      }
+    );
+
+  cloudSaving = false;
+
+  setSync(
+    error
+      ? "Erro ao sincronizar"
+      : "Sincronizado",
+    !error
+  );
+
+  if(error){
+    console.error(error);
+  }
 }
-function setSync(msg,ok){const el=$("#syncStatus");if(el)el.innerHTML=`<span class="syncdot ${ok?"":"off"}"></span>${msg}`;}
+
+function setSync(msg,ok){
+
+  const el = $("#syncStatus");
+
+  if(el){
+
+    el.innerHTML =
+      `<span class="syncdot ${ok ? "" : "off"}"></span>${msg}`;
+
+  }
+}
+
+
+/* =========================================================
+   AUTENTICAÇÃO
+   ========================================================= */
+
 function renderAuth(){
- const el=$("#auth");
- if(!el)return;
- if(!cloudConfigured){el.innerHTML=`<div class="auth"><b>Modo local</b><p class="mut">O login online ainda não está configurado. Preencha <code>SUPABASE_URL</code> e <code>SUPABASE_ANON_KEY</code> no início do arquivo para ativar cadastro, login e sincronização.</p><div id="syncStatus" class="status"><span class="syncdot off"></span>Não conectado à nuvem</div></div>`;return;}
- el.innerHTML=`<div class="auth"><div id="authForm"><b>Salvar progresso na nuvem</b><div class="auth-row" style="margin-top:8px"><input id="email" type="email" placeholder="seu@email.com" autocomplete="email"><input id="password" type="password" placeholder="Senha (mín. 6 caracteres)" autocomplete="current-password"></div><div class="auth-row" style="margin-top:8px"><button class="primary" id="loginBtn">Entrar</button><button id="signupBtn">Criar conta</button></div><div id="authMsg" class="status"></div></div><div id="userBox" style="display:none"><b id="userEmail"></b><div class="auth-row" style="margin-top:8px"><button id="logoutBtn">Sair</button></div><div id="syncStatus" class="status"><span class="syncdot off"></span>Conectando…</div></div></div>`;
- $("#loginBtn").onclick=login; $("#signupBtn").onclick=signup; $("#logoutBtn").onclick=logout;
+
+  const el = $("#auth");
+
+  if(!el)return;
+
+  if(!cloudConfigured){
+
+    el.innerHTML = `
+      <div class="auth">
+        <b>Modo local</b>
+
+        <p class="mut">
+          O login online ainda não está configurado.
+          Preencha <code>SUPABASE_URL</code> e
+          <code>SUPABASE_ANON_KEY</code> no início do arquivo
+          para ativar cadastro, login e sincronização.
+        </p>
+
+        <div id="syncStatus" class="status">
+          <span class="syncdot off"></span>
+          Não conectado à nuvem
+        </div>
+      </div>
+    `;
+
+    return;
+  }
+
+  el.innerHTML = `
+    <div class="auth">
+
+      <div id="authForm">
+
+        <b>Salvar progresso na nuvem</b>
+
+        <div
+          class="auth-row"
+          style="margin-top:8px"
+        >
+
+          <input
+            id="email"
+            type="email"
+            placeholder="seu@email.com"
+            autocomplete="email"
+          >
+
+          <input
+            id="password"
+            type="password"
+            placeholder="Senha (mín. 6 caracteres)"
+            autocomplete="current-password"
+          >
+
+        </div>
+
+        <div
+          class="auth-row"
+          style="margin-top:8px"
+        >
+
+          <button
+            class="primary"
+            id="loginBtn"
+          >
+            Entrar
+          </button>
+
+          <button id="signupBtn">
+            Criar conta
+          </button>
+
+        </div>
+
+        <div
+          id="authMsg"
+          class="status"
+        ></div>
+
+      </div>
+
+      <div
+        id="userBox"
+        style="display:none"
+      >
+
+        <b id="userEmail"></b>
+
+        <div
+          class="auth-row"
+          style="margin-top:8px"
+        >
+
+          <button id="logoutBtn">
+            Sair
+          </button>
+
+        </div>
+
+        <div
+          id="syncStatus"
+          class="status"
+        >
+          <span class="syncdot off"></span>
+          Conectando…
+        </div>
+
+      </div>
+
+    </div>
+  `;
+
+  $("#loginBtn").onclick = login;
+  $("#signupBtn").onclick = signup;
+  $("#logoutBtn").onclick = logout;
 }
-function authMsg(t,danger=false){const e=$("#authMsg");if(e){e.textContent=t;e.className="status"+(danger?" danger":"");}}
-async function login(){const email=$("#email").value.trim(),password=$("#password").value;if(!email||!password)return authMsg("Informe e-mail e senha.",true);authMsg("Entrando…");const {error}=await sb.auth.signInWithPassword({email,password});if(error)authMsg(error.message,true);}
-async function signup(){const email=$("#email").value.trim(),password=$("#password").value;if(!email||!password)return authMsg("Informe e-mail e senha.",true);if(password.length<6)return authMsg("A senha precisa ter pelo menos 6 caracteres.",true);authMsg("Criando conta…");const {data,error}=await sb.auth.signUp({email,password});if(error)return authMsg(error.message,true);authMsg(data.session?"Conta criada e login realizado.":"Conta criada. Verifique seu e-mail se a confirmação estiver ativada.");}
-async function logout(){if(sb)await sb.auth.signOut();cloudReady=false;renderAuth();}
+
+function authMsg(t,danger=false){
+
+  const e = $("#authMsg");
+
+  if(e){
+
+    e.textContent = t;
+
+    e.className =
+      "status" +
+      (danger ? " danger" : "");
+
+  }
+}
+
+async function login(){
+
+  const email =
+    $("#email").value.trim();
+
+  const password =
+    $("#password").value;
+
+  if(!email || !password){
+
+    return authMsg(
+      "Informe e-mail e senha.",
+      true
+    );
+
+  }
+
+  authMsg("Entrando…");
+
+  const {
+    error
+  } = await sb.auth.signInWithPassword({
+    email,
+    password
+  });
+
+  if(error){
+    authMsg(error.message,true);
+  }
+}
+
+async function signup(){
+
+  const email =
+    $("#email").value.trim();
+
+  const password =
+    $("#password").value;
+
+  if(!email || !password){
+
+    return authMsg(
+      "Informe e-mail e senha.",
+      true
+    );
+
+  }
+
+  if(password.length < 6){
+
+    return authMsg(
+      "A senha precisa ter pelo menos 6 caracteres.",
+      true
+    );
+
+  }
+
+  authMsg("Criando conta…");
+
+  const {
+    data,
+    error
+  } = await sb.auth.signUp({
+    email,
+    password
+  });
+
+  if(error){
+
+    return authMsg(
+      error.message,
+      true
+    );
+
+  }
+
+  authMsg(
+    data.session
+      ? "Conta criada e login realizado."
+      : "Conta criada. Verifique seu e-mail se a confirmação estiver ativada."
+  );
+}
+
+async function logout(){
+
+  if(sb){
+    await sb.auth.signOut();
+  }
+
+  cloudReady = false;
+
+  renderAuth();
+}
+
 async function loadCloud(){
- if(!sb)return;
- const {data:{session}}=await sb.auth.getSession();
- if(!session){cloudReady=false;renderAuth();return;}
- const user=session.user;
- const box=$("#userBox"),form=$("#authForm");if(form)form.style.display="none";if(box){box.style.display="block";$("#userEmail").textContent=user.email||"Conta conectada";}
- const {data,error:rowError}=await sb.from("study_progress").select("data,target_date,career,updated_at").eq("user_id",user.id).maybeSingle();
- if(rowError)console.error(rowError);
- if(data){S.d=data.data||{};S.t=data.target_date||S.t;S.c=data.career||S.c||"mus";localSave();}
- else await sb.from("study_progress").insert({user_id:user.id,data:S.d,target_date:S.t,career:S.c||"mus"});
- cloudReady=true;setSync("Sincronizado",true);go("hoje");
+
+  if(!sb)return;
+
+  const {
+    data:{session}
+  } = await sb.auth.getSession();
+
+  if(!session){
+
+    cloudReady = false;
+
+    renderAuth();
+
+    return;
+  }
+
+  const user = session.user;
+
+  const box = $("#userBox");
+  const form = $("#authForm");
+
+  if(form){
+    form.style.display = "none";
+  }
+
+  if(box){
+
+    box.style.display = "block";
+
+    $("#userEmail").textContent =
+      user.email || "Conta conectada";
+
+  }
+
+  const {
+    data,
+    error:rowError
+  } = await sb
+    .from("study_progress")
+    .select(
+      "data,target_date,career,updated_at"
+    )
+    .eq("user_id",user.id)
+    .maybeSingle();
+
+  if(rowError){
+    console.error(rowError);
+  }
+
+  if(data){
+
+    S.d = data.data || {};
+
+    S.t = data.target_date || S.t;
+
+    S.c = data.career || S.c || "mus";
+
+    /*
+      Os lembretes estão dentro de S.d.
+
+      Portanto não é necessário alterar
+      a tabela do Supabase.
+    */
+
+    if(!S.d || typeof S.d !== "object"){
+      S.d = {};
+    }
+
+    localSave();
+
+  }else{
+
+    await sb
+      .from("study_progress")
+      .insert({
+        user_id:user.id,
+        data:S.d,
+        target_date:S.t,
+        career:S.c || "mus"
+      });
+
+  }
+
+  cloudReady = true;
+
+  setSync(
+    "Sincronizado",
+    true
+  );
+
+  go("hoje");
 }
+
 renderAuth();
-if(sb){sb.auth.onAuthStateChange((event)=>{if(event==="SIGNED_IN"||event==="INITIAL_SESSION")setTimeout(loadCloud,0);});}
 
-const ds=d=>d.getFullYear()+"-"+String(d.getMonth()+1).padStart(2,"0")+"-"+String(d.getDate()).padStart(2,"0");
-const M={
-mat:["Matemática",["Operações, frações e potências","Razão, proporção e porcentagem","Equações e problemas (1º e 2º grau)","Funções afim e quadrática","Exponencial e logaritmo","PA e PG","Geometria plana","Geometria espacial","Trigonometria","Análise combinatória e probabilidade","Estatística e gráficos","Geometria analítica","Polinômios: fatoração, produtos notáveis e divisão (números complexos: fora do programa oficial)","Matrizes e determinantes (fora do programa oficial; deixe para depois)","Somatório e notação sigma (fora do programa oficial; deixe para depois)","Números: divisibilidade, primos, reais e valor absoluto","Unidades, notação científica, arredondamento e bases de contagem","Juros simples e compostos, taxas e índices","Funções: domínio, imagem, composição, inversa e funções por partes","Funções modulares e racionais simples; equações e inequações","Ciclo trigonométrico, radianos e funções seno, cosseno e tangente","Lei dos senos e cossenos, semelhança e relações métricas","Transformações isométricas e homotéticas, pavimentações e vistas ortogonais","Sistemas lineares (até 3×3)","Probabilidade condicional; medidas de dispersão, quartis e box-plot"]],
-qui:["Química",["Matéria, misturas e atomística","Tabela periódica e ligações","Funções inorgânicas","Estequiometria e cálculos","Soluções","Termoquímica","Cinética e equilíbrio","Eletroquímica","Química orgânica","Química ambiental","Gases, pressão osmótica e propriedades coligativas","Forças intermoleculares, polaridade e isomeria","pH, ácidos, bases e sais","Química industrial, polímeros e petroquímica"]],
-fis:["Física",["Cinemática","Leis de Newton","Trabalho e energia","Impulso e quantidade de movimento","Gravitação","Hidrostática (não listada no programa oficial)","Termologia","Ondas e acústica","Óptica","Eletrostática","Eletrodinâmica","Magnetismo","Termodinâmica: leis, ciclos e motores","Movimento harmônico e ondas sonoras (timbre, altura, dB)","Energia: fontes, matriz energética e geração de eletricidade","Física moderna: radioatividade, efeito fotoelétrico e quantização","Cosmologia: Big Bang, evolução estelar e espectroscopia"]],
-bio:["Biologia",["Citologia e bioquímica","Metabolismo (respiração, fotossíntese)","Genética","Evolução","Ecologia","Fisiologia humana","Botânica","Microrganismos e saúde","Reprodução e embriologia","Biotecnologia e manipulação do DNA","Zoologia: adaptações e filogenia","Parasitoses, vacinas e saneamento","Sistema nervoso e endócrino"]],
-geo:["Geografia",["Cartografia","Relevo, geologia e clima","Hidrografia e biomas","População e urbanização","Agropecuária e industrialização","Energia e recursos","Geopolítica e globalização","Geografia do Brasil","Meio ambiente e sustentabilidade","Territórios, fronteiras e organismos internacionais","Indicadores socioeconômicos e desigualdades","Trabalho, tecnologia e meio técnico-científico-informacional","Questão agrária, povos indígenas e quilombolas","Migrações e América Latina"]],
-his:["História",["Brasil Colônia","Brasil Império","Primeira República","Era Vargas","Ditadura e redemocratização","Antiguidade e Idade Média","Idade Moderna e revoluções","Imperialismo e guerras mundiais","Guerra Fria e mundo atual","Cidadania, direitos humanos e doutrinas políticas","América Latina: revoluções, populismo e ditaduras","Povos indígenas, escravidão e diáspora africana","Trabalho e capitalismo (Revolução Industrial em diante)"]],
-por:["Português, Literatura e Inglês",["Interpretação de textos","Gramática (sintaxe, concordância, regência)","Figuras de linguagem e gêneros","Romantismo e Realismo","Modernismo e contemporâneo","Inglês: leitura e vocabulário","Literatura: Classicismo, Barroco, Arcadismo, Simbolismo, Parnasianismo e Pré-Modernismo","Coesão, coerência, modalização e variação linguística","Inglês: phrasal verbs, expressões idiomáticas, modais e figuras de linguagem"]],
-fil:["Filosofia",["Origens da filosofia e Filosofia Antiga","Filosofia Medieval","Renascimento e Filosofia Moderna","Filosofia Contemporânea","Epistemologia: conhecimento, ciência e verdade","Ética e Filosofia Política","Estética: o belo, a arte e a criação","Lógica e argumentação (falácias)","Antropologia filosófica: cultura, trabalho e finitude"]],
-soc:["Sociologia",["Sociedade, cultura e socialização","Sociologia clássica: divisão do trabalho, coesão, racionalização e classes","Racismo, etnocentrismo e relativismo cultural","Métodos de pesquisa e análise de dados","Cultura popular, erudita e indústria cultural","Meios de comunicação, redes, algoritmos e fake news","Pensamento social brasileiro","Cidade, juventudes e consumo","Estado, cidadania, democracia e questão agrária"]],
-art:["Arte e Educação Física",["Elementos da linguagem (artes visuais, música, teatro e dança)","Materialidades e processo de criação","Patrimônio cultural e história da arte","Mediação cultural e espaços de arte","Saberes estéticos: arte indígena, africana e brasileira","Educação Física: práticas corporais, cultura corporal e saúde","Arte e tecnologias digitais"]],
-mus:["Música (Composição)",["Leitura de partitura, claves e fórmulas de compasso","Escalas e armaduras de clave","Intervalos e percepção auditiva","Acordes, tríades e campo harmônico","Cadências e progressões harmônicas","Solfejo e ditado melódico e rítmico","Forma musical e análise de peças","História da música (Idade Média ao século XX)","Música brasileira e popular","Instrumento harmônico (piano ou violão)","Composição: melodia com acompanhamento","Composição: peça curta gravada e revisada","Leitura à primeira vista cantada (solfejo)","Improvisação de cerca de 1 minuto a partir de um material dado","Portfólio: 3 composições originais em partitura e/ou áudio","Bibliografia oficial: história da música (Grout e Palisca, Bennett, Severiano)"]],
-cen:["Artes Cênicas",["Aquecimento de corpo e voz (respiração, dicção, projeção)","Jogos teatrais e improvisação","Leitura e análise de texto dramático","História do teatro: Grécia, Idade Média e Renascença","Teatro moderno e contemporâneo (Stanislavski, Brecht, Artaud)","Teatro brasileiro (Arena, Oficina, Nelson Rodrigues, Boal)","Criação de cena e monólogo","Dramaturgia: escrever cenas","Encenação: espaço, figurino e luz","Crítica e repertório de espetáculos","Leitura obrigatória: Senhora dos Afogados (Nelson Rodrigues)","Leitura obrigatória: Sortilégio (Abdias Nascimento)","Leitura obrigatória: Black Brecht (Dione Carlos) e TYBYRA (Juão Nym)","Bibliografia teórica: Januzelli, Brecht, Pupo e Cafezeiro e Gadelha"]]};
-const N={red:"Redação",lit:"Leitura obrigatória",rev:"Revisão e caderno de erros",grp:"Prática em grupo",...Object.fromEntries(Object.entries(M).map(([k,v])=>[k,v[0]]))};
-const H={mus:"10' percepção (ditado ou solfejo) · 15' teoria ou instrumento · 5' anotar o que aprendeu",cen:"10' aquecimento de corpo e voz · 15' leitura ou improvisação · 5' anotar o que aprendeu",grp:"Cada um mostra uma composição, cena ou exercício da semana; o grupo dá feedback com 2 pontos fortes e 1 sugestão",red:"20' tema e repertório · 60' escrever · 40' autocorreção com o checklist",lit:"Em grupo: leiam a obra em roda, em voz alta (treino de leitura dramática), e anotem 3 coisas: tema, personagens e linguagem",rev:"Refaça as questões erradas da semana e passe a limpo o caderno de erros; em grupo, cada um explica um erro aos outros",por:"15' interpretação e gramática · 15' um texto em inglês"};
-const P={1:[["mat",90],["mus",30]],2:[["qui",90],["cen",30]],3:[["fis",90],["mus",30]],4:[["bio",90],["cen",30]],5:[["geo",60],["soc",30],["mus",30]],6:[["his",60],["fil",30],["red",120],["cen",30]],0:[["lit",90],["rev",60],["por",30],["grp",60]]};
-const blocks=w=>P[w].filter(([k])=>k===S.c||!["mus","cen"].includes(k));
-const DN=["Domingo","Segunda","Terça","Quarta","Quinta","Sexta","Sábado"];
-const how=(k,m)=>H[k]||(m<=30?"10' teoria · 15' exercícios · 5' resumo e erros no caderno":m<=60?"20' teoria · 30' exercícios · 10' resumo e erros no caderno":m<120?"30' teoria (aula ou livro) · 45' exercícios · 15' resumo e erros no caderno":"40' teoria (aula ou livro) · 60' exercícios · 20' resumo e erros no caderno");
-const fm=m=>m%60?(m>=60?Math.floor(m/60)+"h"+(m%60):m+" min"):m/60+"h";
-const nxt=k=>{const t=M[k]&&M[k][1];if(!t)return"";const i=t.findIndex((_,j)=>!S.d["t:"+k+":"+j]);return i<0?"Tudo visto! Só exercícios e revisão.":t[i]};
-const L=[["Conselhos à minha filha","Nísia Floresta","1842","prosa"],["Nebulosas","Narcisa Amália","1872","poesia"],["Memórias de Martha","Julia Lopes de Almeida","1899","romance"],["João Miguel","Rachel de Queiroz","1932","romance"],["A paixão segundo G. H.","Clarice Lispector","1964","romance"],["Geografia","Sophia de Mello Breyner Andresen","1967","poesia"],["Balada de amor ao vento","Paulina Chiziane","1990","romance"],["Canção para ninar menino grande","Conceição Evaristo","2018","romance"],["A visão das plantas","Djaimilia Pereira de Almeida","2019","romance"]];
-const LM=["out/26","nov/26","dez/26","jan/27","fev/27","mar/27","abr/27","mai/27","jun/27"];
-const ck=(k,t)=>`<label class="ck"><input type="checkbox" data-k="${k}" ${S.d[k]?"checked":""}><span>${t}</span></label>`;
+if(sb){
 
-function hoje(){const n=new Date(),w=n.getDay(),bl=blocks(w);
-let h=`<h2>Hoje, ${DN[w].toLowerCase()}${w>0&&w<6?"":""}</h2><p class="mut">Estude depois das 21:30 nos dias úteis. Se um dia falhar, recupere no fim de semana.${w==0?" Hoje é dia de estudo em grupo com os amigos: leve o caderno de erros e o que você criou na semana.":""}</p>`;
-bl.forEach(([k,m],j)=>{const t=nxt(k);h+=`<div class="card">${ck("b:"+ds(n)+":"+j,`<b>${N[k]}</b> · ${fm(m)}`)}<div class="mut">${how(k,m)}</div>${t?`<div style="margin-top:6px"><span class="tag">Tópico da vez</span> ${t}</div>`:""}</div>`});
-const mon=new Date(n);mon.setDate(n.getDate()-((w+6)%7));let tot=0,ok=0;
-for(let i=0;i<7;i++){const d=new Date(mon);d.setDate(mon.getDate()+i);blocks((i+1)%7).forEach((_,j)=>{tot++;if(S.d["b:"+ds(d)+":"+j])ok++})}
-h+=`<div class="card"><b>Esta semana</b>: ${ok} de ${tot} blocos<div class="bar"><i style="width:${ok/tot*100}%"></i></div></div>`;
-$("#hoje").innerHTML=h}
+  sb.auth.onAuthStateChange(
+    event => {
 
-function sem(){let h=`<h2>Semana-modelo</h2><p class="mut">18 horas por semana: 2h por noite (seg–sex, com 1h30 de matéria e 30 min da carreira selecionada) e 4h no sábado e no domingo. O domingo é o dia de estudo em grupo com os amigos.</p><div class="card sc"><table><tr><th>Dia</th><th>O que estudar</th></tr>`;
-[1,2,3,4,5,6,0].forEach(w=>{h+=`<tr><td><b>${DN[w]}</b></td><td>${blocks(w).map(([k,m])=>N[k]+" ("+fm(m)+")").join(" + ")}</td></tr>`});
-h+=`</table></div><div class="card"><b>Como usar cada bloco de matéria</b><ul><li>30 min de teoria (videoaula ou livro)</li><li>45 min de exercícios de vestibular</li><li>15 min anotando no caderno de erros o que errou e por quê</li><li>Blocos de carreira (30 min): 10 min de percepção ou aquecimento, 15 min de prática e 5 min de anotações</li><li>Arte e Educação Física não têm bloco fixo: estude esses tópicos junto com as carreiras e no domingo em grupo</li></ul><p class="mut">Nas fases 1 e 2, o bloco de revisão de domingo é de Matemática. Depois volta a ser revisão geral.</p></div>`;
-$("#sem").innerHTML=h}
+      if(
+        event === "SIGNED_IN" ||
+        event === "INITIAL_SESSION"
+      ){
 
-const OFI=`<div class="card"><b>Como é a prova (Guia de Provas Fuvest 2027)</b><ul><li>1ª fase: 80 questões de múltipla escolha em até 5h, com todas as disciplinas do Ensino Médio (inclusive Arte, Educação Física, Filosofia e Sociologia). É preciso acertar pelo menos 30% (24 questões).</li><li>2ª fase, dia 1: 10 questões discursivas de Português (interpretação, gramática e literatura da lista) e a redação. Dia 2: 12 questões discursivas de 2 a 4 disciplinas da carreira.</li><li>Artes Cênicas e Música (São Paulo e Ribeirão Preto) têm ainda a prova de Competências Específicas: mínimo de 50% e peso 2 na nota final, que é (1ª fase + dia 1 + dia 2 + 2 × Competências) ÷ 5.</li><li>Nota zero na redação ou em qualquer dia da 2ª fase elimina.</li></ul><p class="mut" style="margin:.3em 0">Divulgado para 2028: a 2ª fase deve incluir Linguagens (com Arte e Educação Física) no 1º dia. Confirme no guia de 2028, que sai no ano da prova.</p></div>`;
-function fases(){const F=[["Fase 1 · Base","out a dez/2026","Comece pela Matemática. Aprenda os fundamentos de cada matéria, sem pressa. Provão Paulista Seriado II em 10 e 11/11. Carreiras: crie o hábito da prática semanal (ouvido e instrumento, corpo e voz)."],["Fase 2 · 1º ciclo de conteúdo","jan a mai/2027","Percorra todos os tópicos da aba Matérias na ordem sugerida. 1 redação por semana. Leia 1 obra a cada ~5 semanas. Carreiras: percorra os tópicos da aba Carreiras e mostre uma criação por mês ao grupo."],["Fase 3 · 2º ciclo e pontos fracos","jun a set/2027","Volte aos tópicos com mais erros, começando por Química, Geografia, Física e Biologia. Faça provas antigas da Fuvest por matéria. Carreiras: grave e revise suas composições e cenas e monte seu repertório."],["Fase 4 · Reta final","out a nov/2027","Nada de conteúdo novo. Simulados completos e cronometrados, 2 redações por semana, revisão do caderno de erros. Carreiras: ensaie as provas de habilidades em condições reais, com o grupo de domingo como plateia."]];
-$("#fases").innerHTML="<h2>4 fases até a prova</h2>"+OFI+F.map(f=>`<div class="card"><b>${f[0]}</b> <span class="tag">${f[1]}</span><p style="margin:.4em 0 0">${f[2]}</p></div>`).join("")+`<p class="mut">A 2ª fase da Fuvest costuma variar conforme o curso. Selecione a carreira na aba Carreira. Para detalhes definitivos do Vestibular 2028, confira o manual do candidato quando sair.</p>`}
+        setTimeout(
+          loadCloud,
+          0
+        );
 
-function mat(){$("#mat").innerHTML="<h2>Matérias</h2><p class=\"mut\">Os tópicos estão na ordem sugerida. Marque conforme for dominando.</p>"+Object.entries(M).filter(([k])=>k!="mus"&&k!="cen").map(([k,[n,t]])=>`<details><summary><span>${n}</span><span class="mut" data-p="${k}"></span></summary><div>${t.map((x,j)=>ck("t:"+k+":"+j,x)).join("")}</div></details>`).join("")}
+      }
 
-function red(){$("#red").innerHTML=`<h2>Redação</h2>
-<div class="card"><b>Roteiro de 7 passos</b><ol><li>Leia as propostas, escolha uma na folha (sem escolha, a nota é zero) e sublinhe tema, gênero e recorte</li><li>Escreva sua tese em 1 frase</li><li>Escolha 2 argumentos e 1 repertório para cada</li><li>Introdução: contexto + tese</li><li>2 parágrafos: afirmação, explicação, exemplo</li><li>Conclusão: retome a tese e feche a ideia</li><li>Revise coesão, ortografia e concordância</li></ol></div>
-<div class="card"><b>Ritual de sábado (2h)</b><p style="margin:.3em 0">20 min tema e repertório · 60 min escrevendo sem parar · 40 min corrigindo com o checklist.</p>${["Respondi ao tema e ao recorte da proposta?","Respeitei o gênero da proposta que escolhi?","Usei a coletânea de forma referenciada, sem copiar?","Tenho tese clara e argumentos que a sustentam?","Usei repertório (livro, fato histórico, dado) sem forçar?","Os parágrafos se ligam com conectivos variados?","Revisei vírgulas, crase, concordância e ortografia?"].map((x,i)=>ck("r:"+i,x)).join("")}</div>
-<div class="card"><b>Banco de repertório</b><p style="margin:.3em 0">Monte uma página por tema: educação, meio ambiente, tecnologia, desigualdade, saúde mental, arte e cultura, trabalho. Use as obras da lista da Fuvest como repertório literário.</p></div>
-<div class="card"><b>Critérios oficiais (Guia Fuvest 2027)</b><ul><li>Tema, uso da coletânea e autoria: peso 3</li><li>Atender ao tipo e ao gênero da proposta escolhida: peso 2</li><li>Coesão, coerência e progressão do texto: peso 3</li><li>Gramática, escrita e vocabulário: peso 2</li></ul><p style="margin:.3em 0">Recebe zero quem foge do tema, não atende ao gênero pedido ou copia a coletânea. A proposta pode pedir outros gêneros além da dissertação: o roteiro de 7 passos vale para textos dissertativos, e nos demais casos siga a estrutura do gênero pedido.</p></div>`}
+    }
+  );
 
-function lei(){$("#lei").innerHTML=`<h2>Leituras obrigatórias 2028</h2><p class="mut">Lista oficial da FUVEST para o Vestibular 2028. A Fundação definiu antecipadamente a sequência 2026–2029; para 2028, a lista é composta por nove obras, todas de autoras de língua portuguesa. Essas obras também podem ser usadas como repertório literário na preparação para a redação.</p>`+L.map((b,i)=>`<div class="card">${ck("l:"+i,`<b>${b[0]}</b><br><span class="mut">${b[1]} · ${b[2]} · ${b[3]}</span>`)}<span class="tag">meta: ${LM[i]}</span></div>`).join("")+`<p class="mut">Depois de ler, resuma em 5 linhas: enredo, tema central, contexto e um trecho marcante seu. Não dependa de resumos prontos: a Fuvest cobra interpretação.</p>`}
-
-function dic(){$("#dic").innerHTML=`<h2>Dicas</h2><div class="card"><ul>
-<li><b>Constância vence intensidade.</b> 18h por semana feitas toda semana valem mais que maratonas.</li>
-<li><b>Questão antiga é o melhor material.</b> Use as provas da Fuvest a partir da Fase 2.</li>
-<li><b>Caderno de erros:</b> anote a questão, por que errou e a regra certa. Releia a cada domingo.</li>
-<li><b>Revisão espaçada:</b> reveja cada tópico 1 dia, 1 semana e 1 mês depois.</li>
-<li><b>Técnica Pomodoro:</b> 50 min de foco e 10 min de pausa, sem celular.</li>
-<li><b>Simulados cronometrados</b> treinam o ritmo da prova longa, com muitas questões.</li>
-<li><b>Sono e pausas</b> fazem parte do plano. Descansar também é estudar.</li>
-<li><b>Ajuste sem culpa.</b> Semana pesada? Faça só o mínimo dos blocos de fim de semana.</li></ul></div>`}
-
-const OF={mus:`<p class="mut">Guia de Competências Específicas 2026 (ECA/USP). A habilitação em Composição aparece na ECA, em São Paulo. Confira o guia de 2028 quando sair.</p><b>Prova teórica (peso 2)</b><ul><li>Histórias e repertórios: apreciação crítica das obras da bibliografia</li><li>Teoria: claves, intervalos, modos, escalas maiores e menores, tonalidades, progressões harmônicas, métrica, células rítmicas e notação</li><li>Percepção: melodias a uma voz, intervalos, tríades, células rítmicas e timbres</li></ul><b>Prova prática de Composição</b><ul><li>Três composições originais em partitura e/ou áudio (MP3, WAV ou AIFF): peso 3</li><li>Improvisação de cerca de 1 minuto a partir de material dado pela banca: peso 2</li><li>Leitura à primeira vista cantada, execução de uma música ao instrumento e prova oral: peso 1 cada</li></ul><p class="mut">Bibliografia do guia: Grout e Palisca (história da música ocidental), Bennett, Severiano (música popular brasileira), Pascoal (Estrutura tonal: harmonia), Schafer (O ouvido pensante) e Benward e Kolosick (percepção musical).</p>`,cen:`<p class="mut">Guia de Competências Específicas 2026 (ECA/USP). Confira o guia de 2028 quando sair.</p><ul><li>4 dias: prova escrita, 5 oficinas práticas em grupo e prova oral individual</li><li>Avalia entendimento da bibliografia, escrita e análise, disponibilidade para o jogo, presença, escuta e trabalho em grupo</li><li>Vá com roupa que permita se movimentar</li></ul><p class="mut">Bibliografia do guia: Januzelli (A aprendizagem do ator), Brecht (Estudos sobre teatro), Pupo (Para alimentar o desejo do teatro), Cafezeiro e Gadelha (História do teatro brasileiro, Ato III) e as peças Senhora dos Afogados (Nelson Rodrigues), Sortilégio (Abdias Nascimento), Black Brecht (Dione Carlos) e TYBYRA (Juão Nym).</p>`};
-const C=[["mus","Música (Composição)","seg, qua e sex (30 min) e domingo em grupo",["Percepção: ouvir ritmo, altura e timbre com atenção","Ler e escrever partitura com fluência","Harmonia e forma: construir peças com começo, meio e fim","Um instrumento harmônico (piano ou violão) para testar as ideias","Compor, gravar e revisar as próprias peças"]],["cen","Artes Cênicas","ter, qui e sáb (30 min) e domingo em grupo",["Presença: corpo, voz e escuta em cena","Ler e analisar texto dramático","Improvisar e criar cenas com o grupo","Conhecer a história e o repertório do teatro","Refletir e escrever sobre o que assiste e cria"]]];
-function setCareer(k){S.c=k;save();go("car");}
-function car(){
-const k=S.c||"mus";
-const c=C.find(x=>x[0]===k);
-$("#car").innerHTML=`<h2>Carreira</h2>
-<div class="card"><b>Escolha a carreira que este plano está preparando:</b>
-<div class="switch">
-<button class="${k==="mus"?"on":""}" onclick="setCareer('mus')">Música (Composição)</button>
-<button class="${k==="cen"?"on":""}" onclick="setCareer('cen')">Artes Cênicas</button>
-</div>
-<p class="mut">A seleção também altera os blocos de prática de carreira na aba Hoje e na Semana. O restante do plano continua igual.</p></div>
-<div class="card"><h3>${c[1]}</h3><p class="mut" style="margin:0 0 .4em">No cronograma: ${c[2]}</p><b>Competências para desenvolver</b><ul>${c[3].map(x=>`<li>${x}</li>`).join("")}</ul></div>
-<details open><summary><span>O que a prova pede (guia de referência)</span></summary><div>${OF[k]}</div></details>
-<details open><summary><span>Tópicos de estudo</span><span class="mut" data-p="${k}"></span></summary><div>${M[k][1].map((x,j)=>ck("t:"+k+":"+j,x)).join("")}</div></details>
-<div class="card"><b>Domingo em grupo</b><ul><li>Leitura da obra em roda e discussão (90 min)</li><li>Troca de cadernos de erros: cada um explica um erro aos outros (60 min)</li><li>Português e Inglês (30 min)</li><li>Prática da carreira (60 min): cada um mostra uma criação ou exercício da semana e recebe feedback com 2 pontos fortes e 1 sugestão</li></ul></div>`;
 }
-const T=[["hoje","Hoje",hoje],["sem","Semana",sem],["fases","Fases",fases],["mat","Matérias",mat],["car","Carreiras",car],["red","Redação",red],["lei","Leituras",lei],["dic","Dicas",dic]];
-$("#nav").innerHTML=T.map(t=>`<button data-t="${t[0]}">${t[1]}</button>`).join("");
-function go(id){document.querySelectorAll("section").forEach(s=>s.classList.toggle("on",s.id==id));document.querySelectorAll("nav button").forEach(b=>b.classList.toggle("on",b.dataset.t==id));T.find(t=>t[0]==id)[2]();stat();window.scrollTo(0,0)}
-function stat(){let a=0,b=0;Object.entries(M).forEach(([k,[,t]])=>{if(["mus","cen"].includes(k)&&k!==S.c)return;let o=0;t.forEach((_,j)=>{if(S.d["t:"+k+":"+j])o++});a+=o;b+=t.length;const e=document.querySelector(`[data-p="${k}"]`);if(e)e.textContent=o+"/"+t.length});
-L.forEach((_,i)=>{b++;if(S.d["l:"+i])a++});
-$("#gb").style.width=(b?a/b*100:0)+"%";$("#gt").textContent=`Progresso geral: ${a} de ${b} tópicos e leituras (${Math.round(b?a/b*100:0)}%)`;
-const d=Math.ceil((new Date(S.t+"T00:00:00")-new Date())/864e5);$("#dias").textContent=isNaN(d)?"–":Math.max(d,0)}
-document.addEventListener("change",e=>{const k=e.target.dataset&&e.target.dataset.k;if(k){S.d[k]=e.target.checked;save();stat();if($("#hoje").classList.contains("on"))hoje()}});
-document.addEventListener("click",e=>{if(e.target.dataset&&e.target.dataset.t)go(e.target.dataset.t)});
-$("#alvo").value=S.t;$("#alvo").addEventListener("change",e=>{if(e.target.value){S.t=e.target.value;save();stat()}});
+
+
+/* =========================================================
+   DADOS DO PLANO
+   ========================================================= */
+
+const ds = d =>
+  d.getFullYear() +
+  "-" +
+  String(d.getMonth()+1).padStart(2,"0") +
+  "-" +
+  String(d.getDate()).padStart(2,"0");
+
+
+const M = {
+
+mat:[
+  "Matemática",
+  [
+    "Operações, frações e potências",
+    "Razão, proporção e porcentagem",
+    "Equações e problemas (1º e 2º grau)",
+    "Funções afim e quadrática",
+    "Exponencial e logaritmo",
+    "PA e PG",
+    "Geometria plana",
+    "Geometria espacial",
+    "Trigonometria",
+    "Análise combinatória e probabilidade",
+    "Estatística e gráficos",
+    "Geometria analítica",
+    "Polinômios: fatoração, produtos notáveis e divisão (números complexos: fora do programa oficial)",
+    "Matrizes e determinantes (fora do programa oficial; deixe para depois)",
+    "Somatório e notação sigma (fora do programa oficial; deixe para depois)",
+    "Números: divisibilidade, primos, reais e valor absoluto",
+    "Unidades, notação científica, arredondamento e bases de contagem",
+    "Juros simples e compostos, taxas e índices",
+    "Funções: domínio, imagem, composição, inversa e funções por partes",
+    "Funções modulares e racionais simples; equações e inequações",
+    "Ciclo trigonométrico, radianos e funções seno, cosseno e tangente",
+    "Lei dos senos e cossenos, semelhança e relações métricas",
+    "Transformações isométricas e homotéticas, pavimentações e vistas ortogonais",
+    "Sistemas lineares (até 3×3)",
+    "Probabilidade condicional; medidas de dispersão, quartis e box-plot"
+  ]
+],
+
+qui:[
+  "Química",
+  [
+    "Matéria, misturas e atomística",
+    "Tabela periódica e ligações",
+    "Funções inorgânicas",
+    "Estequiometria e cálculos",
+    "Soluções",
+    "Termoquímica",
+    "Cinética e equilíbrio",
+    "Eletroquímica",
+    "Química orgânica",
+    "Química ambiental",
+    "Gases, pressão osmótica e propriedades coligativas",
+    "Forças intermoleculares, polaridade e isomeria",
+    "pH, ácidos, bases e sais",
+    "Química industrial, polímeros e petroquímica"
+  ]
+],
+
+fis:[
+  "Física",
+  [
+    "Cinemática",
+    "Leis de Newton",
+    "Trabalho e energia",
+    "Impulso e quantidade de movimento",
+    "Gravitação",
+    "Hidrostática (não listada no programa oficial)",
+    "Termologia",
+    "Ondas e acústica",
+    "Óptica",
+    "Eletrostática",
+    "Eletrodinâmica",
+    "Magnetismo",
+    "Termodinâmica: leis, ciclos e motores",
+    "Movimento harmônico e ondas sonoras (timbre, altura, dB)",
+    "Energia: fontes, matriz energética e geração de eletricidade",
+    "Física moderna: radioatividade, efeito fotoelétrico e quantização",
+    "Cosmologia: Big Bang, evolução estelar e espectroscopia"
+  ]
+],
+
+bio:[
+  "Biologia",
+  [
+    "Citologia e bioquímica",
+    "Metabolismo (respiração, fotossíntese)",
+    "Genética",
+    "Evolução",
+    "Ecologia",
+    "Fisiologia humana",
+    "Botânica",
+    "Microrganismos e saúde",
+    "Reprodução e embriologia",
+    "Biotecnologia e manipulação do DNA",
+    "Zoologia: adaptações e filogenia",
+    "Parasitoses, vacinas e saneamento",
+    "Sistema nervoso e endócrino"
+  ]
+],
+
+geo:[
+  "Geografia",
+  [
+    "Cartografia",
+    "Relevo, geologia e clima",
+    "Hidrografia e biomas",
+    "População e urbanização",
+    "Agropecuária e industrialização",
+    "Energia e recursos",
+    "Geopolítica e globalização",
+    "Geografia do Brasil",
+    "Meio ambiente e sustentabilidade",
+    "Territórios, fronteiras e organismos internacionais",
+    "Indicadores socioeconômicos e desigualdades",
+    "Trabalho, tecnologia e meio técnico-científico-informacional",
+    "Questão agrária, povos indígenas e quilombolas",
+    "Migrações e América Latina"
+  ]
+],
+
+his:[
+  "História",
+  [
+    "Brasil Colônia",
+    "Brasil Império",
+    "Primeira República",
+    "Era Vargas",
+    "Ditadura e redemocratização",
+    "Antiguidade e Idade Média",
+    "Idade Moderna e revoluções",
+    "Imperialismo e guerras mundiais",
+    "Guerra Fria e mundo atual",
+    "Cidadania, direitos humanos e doutrinas políticas",
+    "América Latina: revoluções, populismo e ditaduras",
+    "Povos indígenas, escravidão e diáspora africana",
+    "Trabalho e capitalismo (Revolução Industrial em diante)"
+  ]
+],
+
+por:[
+  "Português, Literatura e Inglês",
+  [
+    "Interpretação de textos",
+    "Gramática (sintaxe, concordância, regência)",
+    "Figuras de linguagem e gêneros",
+    "Romantismo e Realismo",
+    "Modernismo e contemporâneo",
+    "Inglês: leitura e vocabulário",
+    "Literatura: Classicismo, Barroco, Arcadismo, Simbolismo, Parnasianismo e Pré-Modernismo",
+    "Coesão, coerência, modalização e variação linguística",
+    "Inglês: phrasal verbs, expressões idiomáticas, modais e figuras de linguagem"
+  ]
+],
+
+fil:[
+  "Filosofia",
+  [
+    "Origens da filosofia e Filosofia Antiga",
+    "Filosofia Medieval",
+    "Renascimento e Filosofia Moderna",
+    "Filosofia Contemporânea",
+    "Epistemologia: conhecimento, ciência e verdade",
+    "Ética e Filosofia Política",
+    "Estética: o belo, a arte e a criação",
+    "Lógica e argumentação (falácias)",
+    "Antropologia filosófica: cultura, trabalho e finitude"
+  ]
+],
+
+soc:[
+  "Sociologia",
+  [
+    "Sociedade, cultura e socialização",
+    "Sociologia clássica: divisão do trabalho, coesão, racionalização e classes",
+    "Racismo, etnocentrismo e relativismo cultural",
+    "Métodos de pesquisa e análise de dados",
+    "Cultura popular, erudita e indústria cultural",
+    "Meios de comunicação, redes, algoritmos e fake news",
+    "Pensamento social brasileiro",
+    "Cidade, juventudes e consumo",
+    "Estado, cidadania, democracia e questão agrária"
+  ]
+],
+
+art:[
+  "Arte e Educação Física",
+  [
+    "Elementos da linguagem (artes visuais, música, teatro e dança)",
+    "Materialidades e processo de criação",
+    "Patrimônio cultural e história da arte",
+    "Mediação cultural e espaços de arte",
+    "Saberes estéticos: arte indígena, africana e brasileira",
+    "Educação Física: práticas corporais, cultura corporal e saúde",
+    "Arte e tecnologias digitais"
+  ]
+],
+
+mus:[
+  "Música (Composição)",
+  [
+    "Leitura de partitura, claves e fórmulas de compasso",
+    "Escalas e armaduras de clave",
+    "Intervalos e percepção auditiva",
+    "Acordes, tríades e campo harmônico",
+    "Cadências e progressões harmônicas",
+    "Solfejo e ditado melódico e rítmico",
+    "Forma musical e análise de peças",
+    "História da música (Idade Média ao século XX)",
+    "Música brasileira e popular",
+    "Instrumento harmônico (piano ou violão)",
+    "Composição: melodia com acompanhamento",
+    "Composição: peça curta gravada e revisada",
+    "Leitura à primeira vista cantada (solfejo)",
+    "Improvisação de cerca de 1 minuto a partir de um material dado",
+    "Portfólio: 3 composições originais em partitura e/ou áudio",
+    "Bibliografia oficial: história da música (Grout e Palisca, Bennett, Severiano)"
+  ]
+],
+
+cen:[
+  "Artes Cênicas",
+  [
+    "Aquecimento de corpo e voz (respiração, dicção, projeção)",
+    "Jogos teatrais e improvisação",
+    "Leitura e análise de texto dramático",
+    "História do teatro: Grécia, Idade Média e Renascença",
+    "Teatro moderno e contemporâneo (Stanislavski, Brecht, Artaud)",
+    "Teatro brasileiro (Arena, Oficina, Nelson Rodrigues, Boal)",
+    "Criação de cena e monólogo",
+    "Dramaturgia: escrever cenas",
+    "Encenação: espaço, figurino e luz",
+    "Crítica e repertório de espetáculos",
+    "Leitura obrigatória: Senhora dos Afogados (Nelson Rodrigues)",
+    "Leitura obrigatória: Sortilégio (Abdias Nascimento)",
+    "Leitura obrigatória: Black Brecht (Dione Carlos) e TYBYRA (Juão Nym)",
+    "Bibliografia teórica: Januzelli, Brecht, Pupo e Cafezeiro e Gadelha"
+  ]
+]
+
+};
+
+
+const N = {
+  red:"Redação",
+  lit:"Leitura obrigatória",
+  rev:"Revisão e caderno de erros",
+  grp:"Prática em grupo",
+  ...Object.fromEntries(
+    Object.entries(M).map(
+      ([k,v]) => [k,v[0]]
+    )
+  )
+};
+
+
+const H = {
+  mus:"10' percepção (ditado ou solfejo) · 15' teoria ou instrumento · 5' anotar o que aprendeu",
+  cen:"10' aquecimento de corpo e voz · 15' leitura ou improvisação · 5' anotar o que aprendeu",
+  grp:"Cada um mostra uma composição, cena ou exercício da semana; o grupo dá feedback com 2 pontos fortes e 1 sugestão",
+  red:"20' tema e repertório · 60' escrever · 40' autocorreção com o checklist",
+  lit:"Em grupo: leiam a obra em roda, em voz alta (treino de leitura dramática), e anotem 3 coisas: tema, personagens e linguagem",
+  rev:"Refaça as questões erradas da semana e passe a limpo o caderno de erros; em grupo, cada um explica um erro aos outros",
+  por:"15' interpretação e gramática · 15' um texto em inglês"
+};
+
+
+const P = {
+  1:[["mat",90],["mus",30]],
+  2:[["qui",90],["cen",30]],
+  3:[["fis",90],["mus",30]],
+  4:[["bio",90],["cen",30]],
+  5:[["geo",60],["soc",30],["mus",30]],
+  6:[["his",60],["fil",30],["red",120],["cen",30]],
+  0:[["lit",90],["rev",60],["por",30],["grp",60]]
+};
+
+
+const blocks = w =>
+  P[w].filter(
+    ([k]) =>
+      k === S.c ||
+      !["mus","cen"].includes(k)
+  );
+
+
+const DN = [
+  "Domingo",
+  "Segunda",
+  "Terça",
+  "Quarta",
+  "Quinta",
+  "Sexta",
+  "Sábado"
+];
+
+
+const how = (k,m) =>
+  H[k] ||
+  (
+    m <= 30
+      ? "10' teoria · 15' exercícios · 5' resumo e erros no caderno"
+      : m <= 60
+        ? "20' teoria · 30' exercícios · 10' resumo e erros no caderno"
+        : m < 120
+          ? "30' teoria (aula ou livro) · 45' exercícios · 15' resumo e erros no caderno"
+          : "40' teoria (aula ou livro) · 60' exercícios · 20' resumo e erros no caderno"
+  );
+
+
+const fm = m =>
+  m % 60
+    ? (
+        m >= 60
+          ? Math.floor(m/60)+"h"+(m%60)
+          : m+" min"
+      )
+    : m/60+"h";
+
+
+const nxt = k => {
+
+  const t = M[k] && M[k][1];
+
+  if(!t)return"";
+
+  const i =
+    t.findIndex(
+      (_,j) =>
+        !S.d["t:"+k+":"+j]
+    );
+
+  return i < 0
+    ? "Tudo visto! Só exercícios e revisão."
+    : t[i];
+};
+
+
+/* =========================================================
+   LEITURAS
+   ========================================================= */
+
+const L = [
+  ["Conselhos à minha filha","Nísia Floresta","1842","prosa"],
+  ["Nebulosas","Narcisa Amália","1872","poesia"],
+  ["Memórias de Martha","Julia Lopes de Almeida","1899","romance"],
+  ["João Miguel","Rachel de Queiroz","1932","romance"],
+  ["A paixão segundo G. H.","Clarice Lispector","1964","romance"],
+  ["Geografia","Sophia de Mello Breyner Andresen","1967","poesia"],
+  ["Balada de amor ao vento","Paulina Chiziane","1990","romance"],
+  ["Canção para ninar menino grande","Conceição Evaristo","2018","romance"],
+  ["A visão das plantas","Djaimilia Pereira de Almeida","2019","romance"]
+];
+
+
+const LM = [
+  "out/26",
+  "nov/26",
+  "dez/26",
+  "jan/27",
+  "fev/27",
+  "mar/27",
+  "abr/27",
+  "mai/27",
+  "jun/27"
+];
+
+
+const ck = (k,t) =>
+  `<label class="ck">
+    <input
+      type="checkbox"
+      data-k="${k}"
+      ${S.d[k] ? "checked" : ""}
+    >
+    <span>${t}</span>
+  </label>`;
+
+
+/* =========================================================
+   ABA HOJE
+   ========================================================= */
+
+function hoje(){
+
+  const n = new Date();
+  const w = n.getDay();
+  const bl = blocks(w);
+
+  let h =
+    `<h2>Hoje, ${DN[w].toLowerCase()}</h2>
+     <p class="mut">
+       Estude depois das 21:30 nos dias úteis.
+       Se um dia falhar, recupere no fim de semana.
+       ${
+         w === 0
+           ? " Hoje é dia de estudo em grupo com os amigos: leve o caderno de erros e o que você criou na semana."
+           : ""
+       }
+     </p>`;
+
+  bl.forEach(
+    ([k,m],j) => {
+
+      const t = nxt(k);
+
+      h += `
+        <div class="card">
+
+          ${ck(
+            "b:"+ds(n)+":"+j,
+            `<b>${N[k]}</b> · ${fm(m)}`
+          )}
+
+          <div class="mut">
+            ${how(k,m)}
+          </div>
+
+          ${
+            t
+              ? `
+                <div style="margin-top:6px">
+                  <span class="tag">Tópico da vez</span>
+                  ${t}
+                </div>
+              `
+              : ""
+          }
+
+        </div>
+      `;
+
+    }
+  );
+
+
+  const mon = new Date(n);
+
+  mon.setDate(
+    n.getDate() -
+    ((w+6)%7)
+  );
+
+  let tot = 0;
+  let ok = 0;
+
+  for(let i=0;i<7;i++){
+
+    const d = new Date(mon);
+
+    d.setDate(
+      mon.getDate()+i
+    );
+
+    blocks(
+      (i+1)%7
+    ).forEach(
+      (_,j) => {
+
+        tot++;
+
+        if(
+          S.d[
+            "b:"+ds(d)+":"+j
+          ]
+        ){
+          ok++;
+        }
+
+      }
+    );
+
+  }
+
+  h += `
+    <div class="card">
+      <b>Esta semana</b>:
+      ${ok} de ${tot} blocos
+
+      <div class="bar">
+        <i style="width:${tot ? ok/tot*100 : 0}%"></i>
+      </div>
+    </div>
+  `;
+
+  $("#hoje").innerHTML = h;
+}
+
+
+/* =========================================================
+   ABA SEMANA
+   ========================================================= */
+
+function sem(){
+
+  let h =
+    `<h2>Semana-modelo</h2>
+
+     <p class="mut">
+       18 horas por semana: 2h por noite
+       (seg–sex, com 1h30 de matéria e 30 min
+       da carreira selecionada) e 4h no sábado
+       e no domingo. O domingo é o dia de estudo
+       em grupo com os amigos.
+     </p>
+
+     <div class="card sc">
+       <table>
+         <tr>
+           <th>Dia</th>
+           <th>O que estudar</th>
+         </tr>`;
+
+  [1,2,3,4,5,6,0].forEach(
+    w => {
+
+      h += `
+        <tr>
+          <td><b>${DN[w]}</b></td>
+
+          <td>
+            ${
+              blocks(w)
+                .map(
+                  ([k,m]) =>
+                    N[k]+" ("+fm(m)+")"
+                )
+                .join(" + ")
+            }
+          </td>
+        </tr>
+      `;
+
+    }
+  );
+
+  h += `
+       </table>
+     </div>
+
+     <div class="card">
+
+       <b>Como usar cada bloco de matéria</b>
+
+       <ul>
+         <li>30 min de teoria (videoaula ou livro)</li>
+         <li>45 min de exercícios de vestibular</li>
+         <li>15 min anotando no caderno de erros o que errou e por quê</li>
+         <li>Blocos de carreira (30 min): 10 min de percepção ou aquecimento, 15 min de prática e 5 min de anotações</li>
+         <li>Arte e Educação Física não têm bloco fixo: estude esses tópicos junto com as carreiras e no domingo em grupo</li>
+       </ul>
+
+       <p class="mut">
+         Nas fases 1 e 2, o bloco de revisão de domingo é de Matemática.
+         Depois volta a ser revisão geral.
+       </p>
+
+     </div>`;
+
+  $("#sem").innerHTML = h;
+}
+
+
+/* =========================================================
+   FASES
+   ========================================================= */
+
+const OFI = `
+<div class="card">
+
+  <b>Como é a prova (Guia de Provas Fuvest 2027)</b>
+
+  <ul>
+    <li>1ª fase: 80 questões de múltipla escolha em até 5h, com todas as disciplinas do Ensino Médio (inclusive Arte, Educação Física, Filosofia e Sociologia). É preciso acertar pelo menos 30% (24 questões).</li>
+
+    <li>2ª fase, dia 1: 10 questões discursivas de Português (interpretação, gramática e literatura da lista) e a redação. Dia 2: 12 questões discursivas de 2 a 4 disciplinas da carreira.</li>
+
+    <li>Artes Cênicas e Música (São Paulo e Ribeirão Preto) têm ainda a prova de Competências Específicas: mínimo de 50% e peso 2 na nota final, que é (1ª fase + dia 1 + dia 2 + 2 × Competências) ÷ 5.</li>
+
+    <li>Nota zero na redação ou em qualquer dia da 2ª fase elimina.</li>
+  </ul>
+
+  <p class="mut" style="margin:.3em 0">
+    Divulgado para 2028: a 2ª fase deve incluir Linguagens
+    (com Arte e Educação Física) no 1º dia.
+    Confirme no guia de 2028, que sai no ano da prova.
+  </p>
+
+</div>
+`;
+
+
+function fases(){
+
+  const F = [
+    [
+      "Fase 1 · Base",
+      "out a dez/2026",
+      "Comece pela Matemática. Aprenda os fundamentos de cada matéria, sem pressa. Provão Paulista Seriado II em 10 e 11/11. Carreiras: crie o hábito da prática semanal (ouvido e instrumento, corpo e voz)."
+    ],
+
+    [
+      "Fase 2 · 1º ciclo de conteúdo",
+      "jan a mai/2027",
+      "Percorra todos os tópicos da aba Matérias na ordem sugerida. 1 redação por semana. Leia 1 obra a cada ~5 semanas. Carreiras: percorra os tópicos da aba Carreiras e mostre uma criação por mês ao grupo."
+    ],
+
+    [
+      "Fase 3 · 2º ciclo e pontos fracos",
+      "jun a set/2027",
+      "Volte aos tópicos com mais erros, começando por Química, Geografia, Física e Biologia. Faça provas antigas da Fuvest por matéria. Carreiras: grave e revise suas composições e cenas e monte seu repertório."
+    ],
+
+    [
+      "Fase 4 · Reta final",
+      "out a nov/2027",
+      "Nada de conteúdo novo. Simulados completos e cronometrados, 2 redações por semana, revisão do caderno de erros. Carreiras: ensaie as provas de habilidades em condições reais, com o grupo de domingo como plateia."
+    ]
+  ];
+
+  $("#fases").innerHTML =
+    "<h2>4 fases até a prova</h2>" +
+    OFI +
+
+    F.map(
+      f => `
+        <div class="card">
+          <b>${f[0]}</b>
+          <span class="tag">${f[1]}</span>
+
+          <p style="margin:.4em 0 0">
+            ${f[2]}
+          </p>
+        </div>
+      `
+    ).join("") +
+
+    `
+      <p class="mut">
+        A 2ª fase da Fuvest costuma variar conforme o curso.
+        Selecione a carreira na aba Carreira.
+        Para detalhes definitivos do Vestibular 2028,
+        confira o manual do candidato quando sair.
+      </p>
+    `;
+}
+
+
+/* =========================================================
+   MATÉRIAS
+   ========================================================= */
+
+function mat(){
+
+  $("#mat").innerHTML =
+    `
+      <h2>Matérias</h2>
+
+      <p class="mut">
+        Os tópicos estão na ordem sugerida.
+        Marque conforme for dominando.
+      </p>
+    ` +
+
+    Object.entries(M)
+      .filter(
+        ([k]) =>
+          k !== "mus" &&
+          k !== "cen"
+      )
+      .map(
+        ([k,[n,t]]) => `
+          <details>
+
+            <summary>
+              <span>${n}</span>
+              <span
+                class="mut"
+                data-p="${k}"
+              ></span>
+            </summary>
+
+            <div>
+              ${
+                t.map(
+                  (x,j) =>
+                    ck(
+                      "t:"+k+":"+j,
+                      x
+                    )
+                ).join("")
+              }
+            </div>
+
+          </details>
+        `
+      ).join("");
+}
+
+
+/* =========================================================
+   REDAÇÃO
+   ========================================================= */
+
+function red(){
+
+  $("#red").innerHTML = `
+    <h2>Redação</h2>
+
+    <div class="card">
+
+      <b>Roteiro de 7 passos</b>
+
+      <ol>
+        <li>Leia as propostas, escolha uma na folha (sem escolha, a nota é zero) e sublinhe tema, gênero e recorte</li>
+        <li>Escreva sua tese em 1 frase</li>
+        <li>Escolha 2 argumentos e 1 repertório para cada</li>
+        <li>Introdução: contexto + tese</li>
+        <li>2 parágrafos: afirmação, explicação, exemplo</li>
+        <li>Conclusão: retome a tese e feche a ideia</li>
+        <li>Revise coesão, ortografia e concordância</li>
+      </ol>
+
+    </div>
+
+    <div class="card">
+
+      <b>Ritual de sábado (2h)</b>
+
+      <p style="margin:.3em 0">
+        20 min tema e repertório ·
+        60 min escrevendo sem parar ·
+        40 min corrigindo com o checklist.
+      </p>
+
+      ${
+        [
+          "Respondi ao tema e ao recorte da proposta?",
+          "Respeitei o gênero da proposta que escolhi?",
+          "Usei a coletânea de forma referenciada, sem copiar?",
+          "Tenho tese clara e argumentos que a sustentam?",
+          "Usei repertório (livro, fato histórico, dado) sem forçar?",
+          "Os parágrafos se ligam com conectivos variados?",
+          "Revisei vírgulas, crase, concordância e ortografia?"
+        ]
+        .map(
+          (x,i) =>
+            ck("r:"+i,x)
+        ).join("")
+      }
+
+    </div>
+
+    <div class="card">
+
+      <b>Banco de repertório</b>
+
+      <p style="margin:.3em 0">
+        Monte uma página por tema:
+        educação, meio ambiente, tecnologia,
+        desigualdade, saúde mental, arte e cultura,
+        trabalho. Use as obras da lista da Fuvest
+        como repertório literário.
+      </p>
+
+    </div>
+
+    <div class="card">
+
+      <b>Critérios oficiais (Guia Fuvest 2027)</b>
+
+      <ul>
+        <li>Tema, uso da coletânea e autoria: peso 3</li>
+        <li>Atender ao tipo e ao gênero da proposta escolhida: peso 2</li>
+        <li>Coesão, coerência e progressão do texto: peso 3</li>
+        <li>Gramática, escrita e vocabulário: peso 2</li>
+      </ul>
+
+      <p style="margin:.3em 0">
+        Recebe zero quem foge do tema,
+        não atende ao gênero pedido ou copia a coletânea.
+        A proposta pode pedir outros gêneros além da dissertação:
+        o roteiro de 7 passos vale para textos dissertativos,
+        e nos demais casos siga a estrutura do gênero pedido.
+      </p>
+
+    </div>
+  `;
+}
+
+
+/* =========================================================
+   LEITURAS
+   ========================================================= */
+
+function lei(){
+
+  $("#lei").innerHTML =
+    `
+      <h2>Leituras obrigatórias 2028</h2>
+
+      <p class="mut">
+        Lista oficial da FUVEST para o Vestibular 2028.
+        A Fundação definiu antecipadamente a sequência 2026–2029;
+        para 2028, a lista é composta por nove obras,
+        todas de autoras de língua portuguesa.
+        Essas obras também podem ser usadas como repertório literário
+        na preparação para a redação.
+      </p>
+    ` +
+
+    L.map(
+      (b,i) => `
+        <div class="card">
+
+          ${ck(
+            "l:"+i,
+            `
+              <b>${b[0]}</b><br>
+              <span class="mut">
+                ${b[1]} · ${b[2]} · ${b[3]}
+              </span>
+            `
+          )}
+
+          <span class="tag">
+            meta: ${LM[i]}
+          </span>
+
+        </div>
+      `
+    ).join("") +
+
+    `
+      <p class="mut">
+        Depois de ler, resuma em 5 linhas:
+        enredo, tema central, contexto e um trecho marcante seu.
+        Não dependa de resumos prontos:
+        a Fuvest cobra interpretação.
+      </p>
+    `;
+}
+
+
+/* =========================================================
+   LEMBRETES
+   ========================================================= */
+
+/*
+   Escapa caracteres HTML para que aquilo que o usuário
+   escreve nunca seja interpretado como HTML/JavaScript.
+*/
+
+function escapeHTML(text){
+
+  return String(text)
+    .replace(/&/g,"&amp;")
+    .replace(/</g,"&lt;")
+    .replace(/>/g,"&gt;")
+    .replace(/"/g,"&quot;")
+    .replace(/'/g,"&#039;");
+
+}
+
+
+/*
+   Garante que a estrutura dos lembretes exista.
+*/
+
+function ensureReminders(){
+
+  if(!Array.isArray(S.r)){
+    S.r = [];
+  }
+
+}
+
+
+/*
+   Formata a data do lembrete.
+*/
+
+function formatReminderDate(date){
+
+  const d = new Date(date);
+
+  if(isNaN(d)){
+    return "";
+  }
+
+  return d.toLocaleString(
+    "pt-BR",
+    {
+      day:"2-digit",
+      month:"2-digit",
+      year:"numeric",
+      hour:"2-digit",
+      minute:"2-digit"
+    }
+  );
+
+}
+
+
+/*
+   Cria um identificador simples.
+*/
+
+function reminderId(){
+
+  return (
+    Date.now().toString(36) +
+    Math.random().toString(36).slice(2)
+  );
+
+}
+
+
+/*
+   Adiciona um novo lembrete.
+*/
+
+function addReminder(){
+
+  const input =
+    $("#reminderText");
+
+  if(!input)return;
+
+  const text =
+    input.value.trim();
+
+  if(!text){
+
+    input.focus();
+
+    return;
+
+  }
+
+  ensureReminders();
+
+  S.r.unshift({
+    id:reminderId(),
+    text:text,
+    done:false,
+    createdAt:new Date().toISOString()
+  });
+
+  input.value = "";
+
+  save();
+
+  renderReminders();
+
+}
+
+
+/*
+   Marca/desmarca um lembrete.
+*/
+
+function toggleReminder(id){
+
+  ensureReminders();
+
+  const reminder =
+    S.r.find(
+      r => r.id === id
+    );
+
+  if(!reminder)return;
+
+  reminder.done =
+    !reminder.done;
+
+  save();
+
+  renderReminders();
+
+}
+
+
+/*
+   Exclui um lembrete.
+*/
+
+function deleteReminder(id){
+
+  ensureReminders();
+
+  S.r =
+    S.r.filter(
+      r => r.id !== id
+    );
+
+  save();
+
+  renderReminders();
+
+}
+
+
+/*
+   Edita um lembrete usando prompt.
+*/
+
+function editReminder(id){
+
+  ensureReminders();
+
+  const reminder =
+    S.r.find(
+      r => r.id === id
+    );
+
+  if(!reminder)return;
+
+  const edited =
+    prompt(
+      "Edite seu lembrete:",
+      reminder.text
+    );
+
+  if(edited === null)return;
+
+  const text =
+    edited.trim();
+
+  if(!text)return;
+
+  reminder.text = text;
+
+  save();
+
+  renderReminders();
+
+}
+
+
+/*
+   Renderiza a aba inteira.
+*/
+
+function renderReminders(){
+
+  ensureReminders();
+
+  const reminders =
+    S.r;
+
+  const pending =
+    reminders.filter(
+      r => !r.done
+    ).length;
+
+  const done =
+    reminders.filter(
+      r => r.done
+    ).length;
+
+  let list = "";
+
+  if(!reminders.length){
+
+    list = `
+      <div class="reminder-empty">
+        Você ainda não tem lembretes.
+        <br>
+        Escreva acima alguma coisa que
+        você precisa lembrar depois.
+      </div>
+    `;
+
+  }else{
+
+    list =
+      `<div class="reminder-list">` +
+
+      reminders.map(
+        r => `
+
+          <div
+            class="reminder ${r.done ? "done" : ""}"
+            data-reminder-id="${escapeHTML(r.id)}"
+          >
+
+            <div class="reminder-top">
+
+              <input
+                class="reminder-check"
+                type="checkbox"
+                data-reminder-action="toggle"
+                ${r.done ? "checked" : ""}
+                aria-label="Marcar lembrete como concluído"
+              >
+
+              <div class="reminder-text">
+                ${escapeHTML(r.text)}
+              </div>
+
+            </div>
+
+            <div class="reminder-date">
+              Criado em ${formatReminderDate(r.createdAt)}
+            </div>
+
+            <div class="reminder-actions">
+
+              <button
+                data-reminder-action="edit"
+              >
+                Editar
+              </button>
+
+              <button
+                class="danger"
+                data-reminder-action="delete"
+              >
+                Excluir
+              </button>
+
+            </div>
+
+          </div>
+        `
+      ).join("") +
+
+      `</div>`;
+
+  }
+
+
+  $("#lem").innerHTML = `
+
+    <h2>
+      Lembretes
+    </h2>
+
+    <p class="mut">
+      Anote coisas que você precisa lembrar,
+      mesmo que não sejam tarefas formais do cronograma.
+      Eles são sincronizados com sua conta quando você estiver conectado.
+    </p>
+
+    <div class="card">
+
+      <div
+        style="
+          display:flex;
+          align-items:center;
+          gap:8px;
+          margin-bottom:10px
+        "
+      >
+
+        <b>Novo lembrete</b>
+
+        <span class="reminder-counter">
+          ${pending} pendente${pending === 1 ? "" : "s"}
+          ${done ? " · "+done+" concluído"+(done === 1 ? "" : "s") : ""}
+        </span>
+
+      </div>
+
+      <div class="reminder-form">
+
+        <textarea
+          id="reminderText"
+          placeholder="Ex.: Fiz só metade dos exercícios de potenciação de ontem. Terminar os 7 restantes antes de avançar para exponenciais."
+          maxlength="2000"
+        ></textarea>
+
+        <button id="addReminderBtn">
+          + Adicionar lembrete
+        </button>
+
+      </div>
+
+    </div>
+
+    ${list}
+  `;
+
+  const addBtn =
+    $("#addReminderBtn");
+
+  if(addBtn){
+
+    addBtn.onclick =
+      addReminder;
+
+  }
+
+}
+
+
+/* =========================================================
+   DICAS
+   ========================================================= */
+
+function dic(){
+
+  $("#dic").innerHTML = `
+    <h2>Dicas</h2>
+
+    <div class="card">
+
+      <ul>
+
+        <li>
+          <b>Constância vence intensidade.</b>
+          18h por semana feitas toda semana valem mais que maratonas.
+        </li>
+
+        <li>
+          <b>Questão antiga é o melhor material.</b>
+          Use as provas da Fuvest a partir da Fase 2.
+        </li>
+
+        <li>
+          <b>Caderno de erros:</b>
+          anote a questão, por que errou e a regra certa.
+          Releia a cada domingo.
+        </li>
+
+        <li>
+          <b>Revisão espaçada:</b>
+          reveja cada tópico 1 dia, 1 semana e 1 mês depois.
+        </li>
+
+        <li>
+          <b>Técnica Pomodoro:</b>
+          50 min de foco e 10 min de pausa, sem celular.
+        </li>
+
+        <li>
+          <b>Simulados cronometrados</b>
+          treinam o ritmo da prova longa, com muitas questões.
+        </li>
+
+        <li>
+          <b>Sono e pausas</b>
+          fazem parte do plano. Descansar também é estudar.
+        </li>
+
+        <li>
+          <b>Ajuste sem culpa.</b>
+          Semana pesada? Faça só o mínimo dos blocos de fim de semana.
+        </li>
+
+      </ul>
+
+    </div>
+  `;
+}
+
+
+/* =========================================================
+   CARREIRA
+   ========================================================= */
+
+const OF = {
+
+mus:`
+  <p class="mut">
+    Guia de Competências Específicas 2026 (ECA/USP).
+    A habilitação em Composição aparece na ECA, em São Paulo.
+    Confira o guia de 2028 quando sair.
+  </p>
+
+  <b>Prova teórica (peso 2)</b>
+
+  <ul>
+    <li>Histórias e repertórios: apreciação crítica das obras da bibliografia</li>
+    <li>Teoria: claves, intervalos, modos, escalas maiores e menores, tonalidades, progressões harmônicas, métrica, células rítmicas e notação</li>
+    <li>Percepção: melodias a uma voz, intervalos, tríades, células rítmicas e timbres</li>
+  </ul>
+
+  <b>Prova prática de Composição</b>
+
+  <ul>
+    <li>Três composições originais em partitura e/ou áudio (MP3, WAV ou AIFF): peso 3</li>
+    <li>Improvisação de cerca de 1 minuto a partir de material dado pela banca: peso 2</li>
+    <li>Leitura à primeira vista cantada, execução de uma música ao instrumento e prova oral: peso 1 cada</li>
+  </ul>
+
+  <p class="mut">
+    Bibliografia do guia:
+    Grout e Palisca (história da música ocidental),
+    Bennett, Severiano (música popular brasileira),
+    Pascoal (Estrutura tonal: harmonia),
+    Schafer (O ouvido pensante)
+    e Benward e Kolosick (percepção musical).
+  </p>
+`,
+
+cen:`
+  <p class="mut">
+    Guia de Competências Específicas 2026 (ECA/USP).
+    Confira o guia de 2028 quando sair.
+  </p>
+
+  <ul>
+    <li>4 dias: prova escrita, 5 oficinas práticas em grupo e prova oral individual</li>
+    <li>Avalia entendimento da bibliografia, escrita e análise, disponibilidade para o jogo, presença, escuta e trabalho em grupo</li>
+    <li>Vá com roupa que permita se movimentar</li>
+  </ul>
+
+  <p class="mut">
+    Bibliografia do guia:
+    Januzelli (A aprendizagem do ator),
+    Brecht (Estudos sobre teatro),
+    Pupo (Para alimentar o desejo do teatro),
+    Cafezeiro e Gadelha (História do teatro brasileiro, Ato III)
+    e as peças Senhora dos Afogados (Nelson Rodrigues),
+    Sortilégio (Abdias Nascimento),
+    Black Brecht (Dione Carlos)
+    e TYBYRA (Juão Nym).
+  </p>
+`
+};
+
+
+const C = [
+
+  [
+    "mus",
+    "Música (Composição)",
+    "seg, qua e sex (30 min) e domingo em grupo",
+
+    [
+      "Percepção: ouvir ritmo, altura e timbre com atenção",
+      "Ler e escrever partitura com fluência",
+      "Harmonia e forma: construir peças com começo, meio e fim",
+      "Um instrumento harmônico (piano ou violão) para testar as ideias",
+      "Compor, gravar e revisar as próprias peças"
+    ]
+  ],
+
+  [
+    "cen",
+    "Artes Cênicas",
+    "ter, qui e sáb (30 min) e domingo em grupo",
+
+    [
+      "Presença: corpo, voz e escuta em cena",
+      "Ler e analisar texto dramático",
+      "Improvisar e criar cenas com o grupo",
+      "Conhecer a história e o repertório do teatro",
+      "Refletir e escrever sobre o que assiste e cria"
+    ]
+  ]
+
+];
+
+
+function setCareer(k){
+
+  S.c = k;
+
+  save();
+
+  go("car");
+}
+
+
+function car(){
+
+  const k =
+    S.c || "mus";
+
+  const c =
+    C.find(
+      x => x[0] === k
+    );
+
+  $("#car").innerHTML = `
+
+    <h2>Carreira</h2>
+
+    <div class="card">
+
+      <b>
+        Escolha a carreira que este plano está preparando:
+      </b>
+
+      <div class="switch">
+
+        <button
+          class="${k === "mus" ? "on" : ""}"
+          onclick="setCareer('mus')"
+        >
+          Música (Composição)
+        </button>
+
+        <button
+          class="${k === "cen" ? "on" : ""}"
+          onclick="setCareer('cen')"
+        >
+          Artes Cênicas
+        </button>
+
+      </div>
+
+      <p class="mut">
+        A seleção também altera os blocos de prática
+        de carreira na aba Hoje e na Semana.
+        O restante do plano continua igual.
+      </p>
+
+    </div>
+
+    <div class="card">
+
+      <h3>${c[1]}</h3>
+
+      <p
+        class="mut"
+        style="margin:0 0 .4em"
+      >
+        No cronograma: ${c[2]}
+      </p>
+
+      <b>Competências para desenvolver</b>
+
+      <ul>
+        ${c[3].map(
+          x => `<li>${x}</li>`
+        ).join("")}
+      </ul>
+
+    </div>
+
+    <details open>
+
+      <summary>
+        <span>
+          O que a prova pede (guia de referência)
+        </span>
+      </summary>
+
+      <div>
+        ${OF[k]}
+      </div>
+
+    </details>
+
+    <details open>
+
+      <summary>
+
+        <span>
+          Tópicos de estudo
+        </span>
+
+        <span
+          class="mut"
+          data-p="${k}"
+        ></span>
+
+      </summary>
+
+      <div>
+
+        ${
+          M[k][1].map(
+            (x,j) =>
+              ck(
+                "t:"+k+":"+j,
+                x
+              )
+          ).join("")
+        }
+
+      </div>
+
+    </details>
+
+    <div class="card">
+
+      <b>Domingo em grupo</b>
+
+      <ul>
+        <li>Leitura da obra em roda e discussão (90 min)</li>
+        <li>Troca de cadernos de erros: cada um explica um erro aos outros (60 min)</li>
+        <li>Português e Inglês (30 min)</li>
+        <li>Prática da carreira (60 min): cada um mostra uma criação ou exercício da semana e recebe feedback com 2 pontos fortes e 1 sugestão</li>
+      </ul>
+
+    </div>
+  `;
+}
+
+
+/* =========================================================
+   NAVEGAÇÃO
+   ========================================================= */
+
+const T = [
+
+  ["hoje","Hoje",hoje],
+
+  ["sem","Semana",sem],
+
+  ["fases","Fases",fases],
+
+  ["mat","Matérias",mat],
+
+  ["car","Carreiras",car],
+
+  ["red","Redação",red],
+
+  ["lei","Leituras",lei],
+
+  ["lem","Lembretes",renderReminders],
+
+  ["dic","Dicas",dic]
+
+];
+
+
+$("#nav").innerHTML =
+  T.map(
+    t =>
+      `<button data-t="${t[0]}">${t[1]}</button>`
+  ).join("");
+
+
+/* =========================================================
+   NAVEGAÇÃO + FADE
+   ========================================================= */
+
+function updateNavFade(){
+
+  const nav =
+    $("#nav");
+
+  if(!nav)return;
+
+  const maxScroll =
+    nav.scrollWidth -
+    nav.clientWidth;
+
+  const scrollLeft =
+    nav.scrollLeft;
+
+  const hasLeft =
+    scrollLeft > 2;
+
+  const hasRight =
+    scrollLeft <
+    maxScroll - 2;
+
+  nav.classList.toggle(
+    "fade-left",
+    hasLeft
+  );
+
+  nav.classList.toggle(
+    "fade-right",
+    hasRight
+  );
+}
+
+
+$("#nav").addEventListener(
+  "scroll",
+  updateNavFade,
+  {passive:true}
+);
+
+
+window.addEventListener(
+  "resize",
+  updateNavFade
+);
+
+
+function go(id){
+
+  document
+    .querySelectorAll("section")
+    .forEach(
+      s =>
+        s.classList.toggle(
+          "on",
+          s.id === id
+        )
+    );
+
+  document
+    .querySelectorAll("nav button")
+    .forEach(
+      b =>
+        b.classList.toggle(
+          "on",
+          b.dataset.t === id
+        )
+    );
+
+  const target =
+    T.find(
+      t => t[0] === id
+    );
+
+  if(target){
+    target[2]();
+  }
+
+  stat();
+
+  window.scrollTo(
+    0,
+    0
+  );
+
+  setTimeout(
+    updateNavFade,
+    0
+  );
+}
+
+
+/* =========================================================
+   ESTATÍSTICAS
+   ========================================================= */
+
+function stat(){
+
+  let a = 0;
+  let b = 0;
+
+  Object.entries(M).forEach(
+    ([k,[,t]]) => {
+
+      if(
+        ["mus","cen"].includes(k) &&
+        k !== S.c
+      ){
+        return;
+      }
+
+      let o = 0;
+
+      t.forEach(
+        (_,j) => {
+
+          if(
+            S.d[
+              "t:"+k+":"+j
+            ]
+          ){
+            o++;
+          }
+
+        }
+      );
+
+      a += o;
+      b += t.length;
+
+      const e =
+        document.querySelector(
+          `[data-p="${k}"]`
+        );
+
+      if(e){
+        e.textContent =
+          o+"/"+t.length;
+      }
+
+    }
+  );
+
+
+  L.forEach(
+    (_,i) => {
+
+      b++;
+
+      if(
+        S.d["l:"+i]
+      ){
+        a++;
+      }
+
+    }
+  );
+
+
+  $("#gb").style.width =
+    (
+      b
+        ? a/b*100
+        : 0
+    )+"%";
+
+  $("#gt").textContent =
+    `Progresso geral: ${a} de ${b} tópicos e leituras (${Math.round(b ? a/b*100 : 0)}%)`;
+
+
+  const d =
+    Math.ceil(
+      (
+        new Date(
+          S.t+"T00:00:00"
+        ) -
+        new Date()
+      ) /
+      864e5
+    );
+
+  $("#dias").textContent =
+    isNaN(d)
+      ? "–"
+      : Math.max(d,0);
+
+}
+
+
+/* =========================================================
+   CHECKBOXES DO PLANO
+   ========================================================= */
+
+document.addEventListener(
+  "change",
+  e => {
+
+    const k =
+      e.target.dataset &&
+      e.target.dataset.k;
+
+    if(k){
+
+      S.d[k] =
+        e.target.checked;
+
+      save();
+
+      stat();
+
+      if(
+        $("#hoje").classList.contains("on")
+      ){
+        hoje();
+      }
+
+    }
+
+  }
+);
+
+
+/* =========================================================
+   AÇÕES DOS LEMBRETES
+   ========================================================= */
+
+document.addEventListener(
+  "click",
+  e => {
+
+    /*
+      Navegação
+    */
+
+    if(
+      e.target.dataset &&
+      e.target.dataset.t
+    ){
+
+      go(
+        e.target.dataset.t
+      );
+
+      return;
+    }
+
+
+    /*
+      Ações dos lembretes
+    */
+
+    const action =
+      e.target.dataset &&
+      e.target.dataset.reminderAction;
+
+    if(!action)return;
+
+    const card =
+      e.target.closest(
+        "[data-reminder-id]"
+      );
+
+    if(!card)return;
+
+    const id =
+      card.dataset.reminderId;
+
+    if(action === "toggle"){
+
+      toggleReminder(id);
+
+    }
+
+    if(action === "edit"){
+
+      editReminder(id);
+
+    }
+
+    if(action === "delete"){
+
+      deleteReminder(id);
+
+    }
+
+  }
+);
+
+
+/* =========================================================
+   DATA DA PROVA
+   ========================================================= */
+
+$("#alvo").value =
+  S.t;
+
+$("#alvo").addEventListener(
+  "change",
+  e => {
+
+    if(e.target.value){
+
+      S.t =
+        e.target.value;
+
+      save();
+
+      stat();
+
+    }
+
+  }
+);
+
+
+/* =========================================================
+   TECLADO NO CAMPO DE LEMBRETES
+   ========================================================= */
+
+document.addEventListener(
+  "keydown",
+  e => {
+
+    if(
+      e.target.id === "reminderText" &&
+      e.ctrlKey &&
+      e.key === "Enter"
+    ){
+
+      e.preventDefault();
+
+      addReminder();
+
+    }
+
+  }
+);
+
+
+/* =========================================================
+   INICIALIZAÇÃO
+   ========================================================= */
+
 go("hoje");
-</script></body></html>
+
+setTimeout(
+  updateNavFade,
+  0
+);
+
+</script>
+
+</body>
+</html>
