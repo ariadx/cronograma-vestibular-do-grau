@@ -7,11 +7,11 @@ Direct3D:
     VRAM:     2295 MB
     Driver:   31.0.21925.1001
 Begin MonoManager ReloadAssembly
-- Completed reload, in  2.077 seconds
+- Completed reload, in  2.158 seconds
 <RI> Initializing input.
 <RI> Input initialized.
 <RI> Initialized touch support.
-UnloadTime: 0.595200 ms
+UnloadTime: 0.750400 ms
 [AssetBundleManager] Loading Asset Bundle Manifest: Windows
  
 (Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
@@ -561,7 +561,7 @@ Initializing file request with path : "D:/Jogos/Overcooked-2-SteamRIP.com/Overco
 (Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
 Unloading 4 Unused Serialized files (Serialized files now loaded: 135)
-UnloadTime: 1.987700 ms
+UnloadTime: 3.085100 ms
 DontDestroyOnLoad only work for root GameObjects or components on root GameObjects.
  
 (Filename:  Line: 485)
@@ -602,7 +602,7 @@ Initializing file request with path : "D:/Jogos/Overcooked-2-SteamRIP.com/Overco
 
 
 Unloading 801 unused Assets to reduce memory usage. Loaded Objects now: 15848.
-Total: 9.249400 ms (FindLiveObjects: 0.665500 ms CreateObjectMapping: 0.922900 ms MarkObjects: 6.811800 ms  DeleteObjects: 0.849100 ms)
+Total: 16.296500 ms (FindLiveObjects: 0.626500 ms CreateObjectMapping: 0.889200 ms MarkObjects: 7.152400 ms  DeleteObjects: 7.628000 ms)
 
 The referenced script on this Behaviour (Game Object '') is missing!
  
@@ -625,7 +625,7 @@ The referenced script on this Behaviour (Game Object 'NetworkManager') is missin
 (Filename:  Line: 1758)
 
 Unloading 2 Unused Serialized files (Serialized files now loaded: 137)
-UnloadTime: 1.559100 ms
+UnloadTime: 1.553600 ms
 [AssetBundleManager] Loading StartScreen_Base from startscreen_base bundle
  
 (Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
@@ -648,7 +648,7 @@ Initializing syncronous file request with path : "D:/Jogos/Overcooked-2-SteamRIP
 
 
 Unloading 2159 unused Assets to reduce memory usage. Loaded Objects now: 35615.
-Total: 25.102800 ms (FindLiveObjects: 1.475400 ms CreateObjectMapping: 2.483800 ms MarkObjects: 17.212200 ms  DeleteObjects: 3.929600 ms)
+Total: 26.814300 ms (FindLiveObjects: 1.226700 ms CreateObjectMapping: 1.765700 ms MarkObjects: 19.709100 ms  DeleteObjects: 4.112400 ms)
 
 Material doesn't have a texture property '_MainTex'
  
@@ -675,10 +675,10 @@ The referenced script on this Behaviour (Game Object 'NetworkManager') is missin
 (Filename:  Line: 1758)
 
 Unloading 3 Unused Serialized files (Serialized files now loaded: 138)
-UnloadTime: 7.439900 ms
+UnloadTime: 8.080300 ms
 
-Unloading 2277 unused Assets to reduce memory usage. Loaded Objects now: 28528.
-Total: 36.167200 ms (FindLiveObjects: 1.020900 ms CreateObjectMapping: 1.726800 ms MarkObjects: 12.486900 ms  DeleteObjects: 20.932100 ms)
+Unloading 2520 unused Assets to reduce memory usage. Loaded Objects now: 28524.
+Total: 37.706700 ms (FindLiveObjects: 1.045500 ms CreateObjectMapping: 1.640300 ms MarkObjects: 12.393800 ms  DeleteObjects: 22.626800 ms)
 
 [AssetBundleManager] Loading WorldMap from worldmap bundle
  
@@ -693,10 +693,160 @@ Initializing file request with path : "D:/Jogos/Overcooked-2-SteamRIP.com/Overco
 (Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
 Unloading 2 Unused Serialized files (Serialized files now loaded: 140)
-UnloadTime: 1.744400 ms
+UnloadTime: 2.925000 ms
 The renderer Plane is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
  
 (Filename:  Line: 711)
+
+BoxColliders does not support negative scale or size.
+The effective box size has been forced positive and is likely to give unexpected collision geometry.
+If you absolutely need to use negative scaling you can use the convex MeshCollider. Scene hierarchy path "Grid/Tiles/Wizard/Tile/Constant_Ramp_Wizard/Ramp/BottomOffset/Bottom/CollisionBottom"
+ 
+(Filename:  Line: 0)
+
+BoxColliders does not support negative scale or size.
+The effective box size has been forced positive and is likely to give unexpected collision geometry.
+If you absolutely need to use negative scaling you can use the convex MeshCollider. Scene hierarchy path "Grid/Tiles/Wizard/Tile/Constant_Ramp_Wizard/Ramp/BottomOffset/Bottom/CollisionBottom"
+ 
+(Filename:  Line: 0)
+
+BoxColliders does not support negative scale or size.
+The effective box size has been forced positive and is likely to give unexpected collision geometry.
+If you absolutely need to use negative scaling you can use the convex MeshCollider. Scene hierarchy path "Grid/Tiles/Sushi/Tile/Blue_Ramp_Sushi/Ramp/BottomOffset/Bottom/CollisionBottom"
+ 
+(Filename:  Line: 0)
+
+BoxColliders does not support negative scale or size.
+The effective box size has been forced positive and is likely to give unexpected collision geometry.
+If you absolutely need to use negative scaling you can use the convex MeshCollider. Scene hierarchy path "Grid/Tiles/Sushi/Tile/Blue_Ramp_Sushi/Ramp/BottomOffset/Bottom/CollisionBottom"
+ 
+(Filename:  Line: 0)
+
+BoxColliders does not support negative scale or size.
+The effective box size has been forced positive and is likely to give unexpected collision geometry.
+If you absolutely need to use negative scaling you can use the convex MeshCollider. Scene hierarchy path "Grid/Tiles/Sushi/Tile/Purple_Ramp_Sushi/Ramp/BottomOffset/Bottom/CollisionBottom"
+ 
+(Filename:  Line: 0)
+
+BoxColliders does not support negative scale or size.
+The effective box size has been forced positive and is likely to give unexpected collision geometry.
+If you absolutely need to use negative scaling you can use the convex MeshCollider. Scene hierarchy path "Grid/Tiles/Sushi/Tile/Yellow_Ramp_Sushi/Ramp/BottomOffset/Bottom/CollisionBottom"
+ 
+(Filename:  Line: 0)
+
+BoxColliders does not support negative scale or size.
+The effective box size has been forced positive and is likely to give unexpected collision geometry.
+If you absolutely need to use negative scaling you can use the convex MeshCollider. Scene hierarchy path "Grid/Tiles/Balloon/Tile/Yellow_Ramp_Balloon/Ramp/BottomOffset/Bottom/CollisionBottom"
+ 
+(Filename:  Line: 0)
+
+BoxColliders does not support negative scale or size.
+The effective box size has been forced positive and is likely to give unexpected collision geometry.
+If you absolutely need to use negative scaling you can use the convex MeshCollider. Scene hierarchy path "Grid/Tiles/Mine/Tile/Constant_Ramp_Mine/Ramp/BottomOffset/Bottom/CollisionBottom"
+ 
+(Filename:  Line: 0)
+
+BoxColliders does not support negative scale or size.
+The effective box size has been forced positive and is likely to give unexpected collision geometry.
+If you absolutely need to use negative scaling you can use the convex MeshCollider. Scene hierarchy path "Grid/Tiles/Mine/Tile/Constant_Ramp_Mine/Ramp/BottomOffset/Bottom/CollisionBottom"
+ 
+(Filename:  Line: 0)
+
+BoxColliders does not support negative scale or size.
+The effective box size has been forced positive and is likely to give unexpected collision geometry.
+If you absolutely need to use negative scaling you can use the convex MeshCollider. Scene hierarchy path "Grid/Tiles/Mine/Tile/Purple_Ramp_Mine/Ramp/BottomOffset/Bottom/CollisionBottom"
+ 
+(Filename:  Line: 0)
+
+BoxColliders does not support negative scale or size.
+The effective box size has been forced positive and is likely to give unexpected collision geometry.
+If you absolutely need to use negative scaling you can use the convex MeshCollider. Scene hierarchy path "Grid/Tiles/Mine/Tile/Purple_Ramp_Mine/Ramp/BottomOffset/Bottom/CollisionBottom"
+ 
+(Filename:  Line: 0)
+
+BoxColliders does not support negative scale or size.
+The effective box size has been forced positive and is likely to give unexpected collision geometry.
+If you absolutely need to use negative scaling you can use the convex MeshCollider. Scene hierarchy path "Grid/Tiles/Rapids/Tile/Green_Ramp_Rapids/Ramp/BottomOffset/Bottom/CollisionBottom"
+ 
+(Filename:  Line: 0)
+
+BoxColliders does not support negative scale or size.
+The effective box size has been forced positive and is likely to give unexpected collision geometry.
+If you absolutely need to use negative scaling you can use the convex MeshCollider. Scene hierarchy path "Grid/Tiles/Mine/Tile/Constant_Ramp_Mine/Ramp/BottomOffset/Bottom/CollisionBottom"
+ 
+(Filename:  Line: 0)
+
+BoxColliders does not support negative scale or size.
+The effective box size has been forced positive and is likely to give unexpected collision geometry.
+If you absolutely need to use negative scaling you can use the convex MeshCollider. Scene hierarchy path "Grid/Tiles/Mine/Tile/Constant_Ramp_Mine/Ramp/BottomOffset/Bottom/CollisionBottom"
+ 
+(Filename:  Line: 0)
+
+BoxColliders does not support negative scale or size.
+The effective box size has been forced positive and is likely to give unexpected collision geometry.
+If you absolutely need to use negative scaling you can use the convex MeshCollider. Scene hierarchy path "Grid/Tiles/Wizard/Tile/Constant_Ramp_Wizard/Ramp/BottomOffset/Bottom/CollisionBottom"
+ 
+(Filename:  Line: 0)
+
+BoxColliders does not support negative scale or size.
+The effective box size has been forced positive and is likely to give unexpected collision geometry.
+If you absolutely need to use negative scaling you can use the convex MeshCollider. Scene hierarchy path "Grid/Tiles/Balloon/Tile/Constant_Ramp_Balloon/Ramp/BottomOffset/Bottom/CollisionBottom"
+ 
+(Filename:  Line: 0)
+
+BoxColliders does not support negative scale or size.
+The effective box size has been forced positive and is likely to give unexpected collision geometry.
+If you absolutely need to use negative scaling you can use the convex MeshCollider. Scene hierarchy path "Grid/Tiles/Mine/Tile/Green_Ramp_Mine/Ramp/BottomOffset/Bottom/CollisionBottom"
+ 
+(Filename:  Line: 0)
+
+BoxColliders does not support negative scale or size.
+The effective box size has been forced positive and is likely to give unexpected collision geometry.
+If you absolutely need to use negative scaling you can use the convex MeshCollider. Scene hierarchy path "Grid/Tiles/Mine/Tile/Constant_Ramp_Mine/Ramp/BottomOffset/Bottom/CollisionBottom"
+ 
+(Filename:  Line: 0)
+
+BoxColliders does not support negative scale or size.
+The effective box size has been forced positive and is likely to give unexpected collision geometry.
+If you absolutely need to use negative scaling you can use the convex MeshCollider. Scene hierarchy path "Grid/Tiles/Mine/Tile/Constant_Ramp_Mine/Ramp/BottomOffset/Bottom/CollisionBottom"
+ 
+(Filename:  Line: 0)
+
+BoxColliders does not support negative scale or size.
+The effective box size has been forced positive and is likely to give unexpected collision geometry.
+If you absolutely need to use negative scaling you can use the convex MeshCollider. Scene hierarchy path "Grid/Tiles/Space/Tile/Constant_Ramp_Space/Ramp/BottomOffset/Bottom/CollisionBottom"
+ 
+(Filename:  Line: 0)
+
+BoxColliders does not support negative scale or size.
+The effective box size has been forced positive and is likely to give unexpected collision geometry.
+If you absolutely need to use negative scaling you can use the convex MeshCollider. Scene hierarchy path "Grid/Tiles/Mine/Tile/Constant_Ramp_Mine/Ramp/BottomOffset/Bottom/CollisionBottom"
+ 
+(Filename:  Line: 0)
+
+BoxColliders does not support negative scale or size.
+The effective box size has been forced positive and is likely to give unexpected collision geometry.
+If you absolutely need to use negative scaling you can use the convex MeshCollider. Scene hierarchy path "Grid/Tiles/Mine/Tile/Constant_Ramp_Mine/Ramp/BottomOffset/Bottom/CollisionBottom"
+ 
+(Filename:  Line: 0)
+
+BoxColliders does not support negative scale or size.
+The effective box size has been forced positive and is likely to give unexpected collision geometry.
+If you absolutely need to use negative scaling you can use the convex MeshCollider. Scene hierarchy path "Grid/Tiles/DrivableMountain/Tile/Grey_Ramp_Sushi/Ramp/BottomOffset/Bottom/CollisionBottom"
+ 
+(Filename:  Line: 0)
+
+BoxColliders does not support negative scale or size.
+The effective box size has been forced positive and is likely to give unexpected collision geometry.
+If you absolutely need to use negative scaling you can use the convex MeshCollider. Scene hierarchy path "Grid/Tiles/Sushi/Tile/Grey_Ramp_Sushi/Ramp/BottomOffset/Bottom/CollisionBottom"
+ 
+(Filename:  Line: 0)
+
+BoxColliders does not support negative scale or size.
+The effective box size has been forced positive and is likely to give unexpected collision geometry.
+If you absolutely need to use negative scaling you can use the convex MeshCollider. Scene hierarchy path "Grid/Tiles/Mine/Tile/Blue_Ramp_Mine/Ramp/BottomOffset/Bottom/CollisionBottom"
+ 
+(Filename:  Line: 0)
 
 [AssetBundleManager] loading has been unloaded successfully
  
@@ -711,12 +861,856 @@ The renderer Plane is a part of a static batch. Setting the lightmap scale and o
 (Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
 Setting up 3 worker threads for Enlighten.
-  Thread -> id: 1a2c -> priority: 1 
-  Thread -> id: 238 -> priority: 1 
-  Thread -> id: 52e0 -> priority: 1 
+  Thread -> id: 466c -> priority: 1 
+  Thread -> id: 255c -> priority: 1 
+  Thread -> id: 206c -> priority: 1 
 
-Unloading 1018 unused Assets to reduce memory usage. Loaded Objects now: 98242.
-Total: 41.471300 ms (FindLiveObjects: 6.349600 ms CreateObjectMapping: 2.878700 ms MarkObjects: 29.806800 ms  DeleteObjects: 2.435800 ms)
+Unloading 1018 unused Assets to reduce memory usage. Loaded Objects now: 98238.
+Total: 42.205700 ms (FindLiveObjects: 6.070000 ms CreateObjectMapping: 2.762200 ms MarkObjects: 30.921400 ms  DeleteObjects: 2.451900 ms)
+
+[AssetBundleManager] Loading InGameMenu from ingamemenu bundle
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+[AssetBundleManager] Loading Asset Bundle : ingamemenu
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Initializing syncronous file request with path : "D:/Jogos/Overcooked-2-SteamRIP.com/Overcooked! 2/Overcooked2_Data/StreamingAssets\Windows/ingamemenu"
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+The referenced script on this Behaviour (Game Object 'T17ScrollView_Consoles') is missing!
+ 
+(Filename:  Line: 1758)
+
+The renderer m_map_building_door_01 (1) is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer m_map_building_window_round_01 (1) is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer m_map_building_aircon_01 (1) is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer m_map_building_small_01 (1) is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer m_map_building_window_large_01 (1) is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer m_map_building_door_01 is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer m_map_building_awning_01 (1) is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer m_map_building_window_small_01 (1) is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer m_map_building_fish_01 (2) is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer m_map_building_fish_01 (1) is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer m_map_building_large_01 (1) is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer m_map_building_aircon_01 (2) is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer m_map_building_door_01 (1) is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer m_map_building_door_01 (1) is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer m_map_building_aircon_01 (2) is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer m_map_building_window_round_01 (1) is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer m_map_building_window_small_01 (1) is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer m_map_building_door_01 is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer m_map_building_awning_01 (1) is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer m_map_building_large_01 (1) is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer m_map_building_aircon_01 (3) is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer m_map_building_door_01 (1) is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer m_map_building_window_small_01 (2) is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer m_map_building_door_01 is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer m_map_building_fish_01 (1) is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer m_map_building_fish_01 (2) is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer m_map_building_aircon_01 (2) is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer m_map_building_window_small_01 (1) is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer m_map_building_window_small_01 (3) is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer m_map_building_awning_01 (1) is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer m_map_building_large_01 (1) is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer m_map_building_large_01 (1) is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer m_map_building_aircon_01 (2) is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer m_map_building_door_01 is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer m_map_building_window_small_01 (1) is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer m_map_building_fish_01 (1) is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer m_map_building_fish_01 (2) is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer m_map_building_window_round_01 (1) is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer m_map_building_small_01 (1) is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer m_map_building_aircon_01 (1) is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer m_map_building_window_large_01 (1) is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer m_map_building_awning_01 (1) is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer m_map_building_window_small_01 (1) is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer m_map_building_aircon_01 (3) is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer m_map_building_aircon_01 (2) is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer m_map_building_door_01 is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer m_map_building_large_01 (1) is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer m_map_building_window_round_01 (1) is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer m_map_building_awning_01 (1) is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer m_map_building_door_01 (1) is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer m_map_building_door_01 (1) is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer m_map_building_aircon_01 (3) is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer m_map_building_awning_01 (1) is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer m_map_building_large_01 (1) is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer m_map_building_aircon_01 (2) is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer m_map_building_window_small_01 (1) is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer m_map_building_door_01 is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer m_map_building_door_01 (1) is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer m_map_building_door_01 (1) is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer m_map_building_aircon_01 (2) is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer m_map_building_window_small_01 (1) is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer m_map_building_aircon_01 (3) is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer m_map_building_large_01 (1) is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer m_map_building_awning_01 (1) is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer m_map_building_door_01 is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer m_map_building_awning_01 (1) is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer m_map_building_large_01 (1) is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer m_map_building_door_01 is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer m_map_building_fish_01 (1) is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer m_map_building_window_round_01 (1) is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer m_map_building_small_01 (1) is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer m_map_building_window_small_01 (1) is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer m_map_building_fish_01 (2) is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer m_map_building_aircon_01 (2) is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer m_map_building_window_large_01 (1) is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer m_map_building_aircon_01 (1) is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer m_map_building_window_round_01 (1) is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer m_map_building_large_01 (1) is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer m_map_building_door_01 is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer m_map_building_aircon_01 (2) is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer m_map_building_aircon_01 (3) is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer m_map_building_awning_01 (1) is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer m_map_building_window_small_01 (1) is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+[AssetBundleManager] Loading Loading from loading bundle
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+[AssetBundleManager] Loading Asset Bundle : loading
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Initializing syncronous file request with path : "D:/Jogos/Overcooked-2-SteamRIP.com/Overcooked! 2/Overcooked2_Data/StreamingAssets\Windows/loading"
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+The referenced script on this Behaviour (Game Object 'NetworkManager') is missing!
+ 
+(Filename:  Line: 1758)
+
+The referenced script on this Behaviour (Game Object 'NetworkManager') is missing!
+ 
+(Filename:  Line: 1758)
+
+Unloading 2 Unused Serialized files (Serialized files now loaded: 138)
+UnloadTime: 44.722500 ms
+
+Unloading 3831 unused Assets to reduce memory usage. Loaded Objects now: 28811.
+Total: 52.485900 ms (FindLiveObjects: 2.409100 ms CreateObjectMapping: 1.778300 ms MarkObjects: 12.500600 ms  DeleteObjects: 35.797500 ms)
+
+[AssetBundleManager] Loading s_wizard_school_3_4 from s_wizard_school_3_4 bundle
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+[AssetBundleManager] Loading Asset Bundle : s_wizard_school_3_4
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Initializing file request with path : "D:/Jogos/Overcooked-2-SteamRIP.com/Overcooked! 2/Overcooked2_Data/StreamingAssets\Windows/s_wizard_school_3_4"
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Initializing file request with path : "D:/Jogos/Overcooked-2-SteamRIP.com/Overcooked! 2/Overcooked2_Data/StreamingAssets\Windows/bundle55"
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Unloading 2 Unused Serialized files (Serialized files now loaded: 141)
+UnloadTime: 2.249700 ms
+The renderer Mesh is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer Mesh is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer Mesh is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer Mesh is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer Mesh is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer Combined Floor Tile is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer Combined Floor Tile is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer Mesh is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer ChoppingBoard2 is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer Mesh is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer Mesh is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer Combined Floor Tile (3) is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer ChoppingBoard2 is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer Mesh is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer Combined Floor Tile is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer Combined Floor Tile (2) is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer Mesh is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer Mesh is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer Combined Floor Tile (1) is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer Mesh is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer Mesh is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer Mesh is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer Mesh is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer Mesh is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+[AssetBundleManager] worldmap has been unloaded successfully
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+[AssetBundleManager] loading has been unloaded successfully
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+[AssetBundleManager] ingamemenu has been unloaded successfully
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+
+Unloading 1678 unused Assets to reduce memory usage. Loaded Objects now: 41217.
+Total: 33.960600 ms (FindLiveObjects: 1.933000 ms CreateObjectMapping: 2.407800 ms MarkObjects: 19.616100 ms  DeleteObjects: 10.003300 ms)
+
+[AssetBundleManager] Loading InGameMenu from ingamemenu bundle
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+[AssetBundleManager] Loading Asset Bundle : ingamemenu
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Initializing syncronous file request with path : "D:/Jogos/Overcooked-2-SteamRIP.com/Overcooked! 2/Overcooked2_Data/StreamingAssets\Windows/ingamemenu"
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+The referenced script on this Behaviour (Game Object 'T17ScrollView_Consoles') is missing!
+ 
+(Filename:  Line: 1758)
+
+The referenced script on this Behaviour (Game Object '<null>') is missing!
+ 
+(Filename:  Line: 1758)
+
+The referenced script on this Behaviour (Game Object 'Chef') is missing!
+ 
+(Filename:  Line: 1758)
+
+The referenced script on this Behaviour (Game Object 'Chef') is missing!
+ 
+(Filename:  Line: 1758)
+
+The referenced script on this Behaviour (Game Object '<null>') is missing!
+ 
+(Filename:  Line: 1758)
+
+The referenced script on this Behaviour (Game Object 'Chef') is missing!
+ 
+(Filename:  Line: 1758)
+
+The referenced script on this Behaviour (Game Object 'Chef') is missing!
+ 
+(Filename:  Line: 1758)
+
+[AssetBundleManager] Loading Loading from loading bundle
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+[AssetBundleManager] Loading Asset Bundle : loading
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Initializing syncronous file request with path : "D:/Jogos/Overcooked-2-SteamRIP.com/Overcooked! 2/Overcooked2_Data/StreamingAssets\Windows/loading"
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+The referenced script on this Behaviour (Game Object 'NetworkManager') is missing!
+ 
+(Filename:  Line: 1758)
+
+The referenced script on this Behaviour (Game Object 'NetworkManager') is missing!
+ 
+(Filename:  Line: 1758)
+
+Unloading 1 Unused Serialized files (Serialized files now loaded: 139)
+UnloadTime: 24.421200 ms
+
+Unloading 1640 unused Assets to reduce memory usage. Loaded Objects now: 30263.
+Total: 63.043600 ms (FindLiveObjects: 2.126500 ms CreateObjectMapping: 2.308000 ms MarkObjects: 16.596700 ms  DeleteObjects: 42.012100 ms)
+
+[AssetBundleManager] s_wizard_school_3_4 has been unloaded successfully
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+[AssetBundleManager] bundle55 has been unloaded successfully
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+[AssetBundleManager] Loading s_wizard_school_3_4 from s_wizard_school_3_4 bundle
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+[AssetBundleManager] Loading Asset Bundle : s_wizard_school_3_4
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Initializing file request with path : "D:/Jogos/Overcooked-2-SteamRIP.com/Overcooked! 2/Overcooked2_Data/StreamingAssets\Windows/s_wizard_school_3_4"
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Initializing file request with path : "D:/Jogos/Overcooked-2-SteamRIP.com/Overcooked! 2/Overcooked2_Data/StreamingAssets\Windows/bundle55"
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Unloading 2 Unused Serialized files (Serialized files now loaded: 139)
+UnloadTime: 3.579500 ms
+The renderer Mesh is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer Mesh is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer Mesh is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer Mesh is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer Mesh is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer Combined Floor Tile is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer Combined Floor Tile is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer Mesh is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer ChoppingBoard2 is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer Mesh is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer Mesh is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer Combined Floor Tile (3) is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer ChoppingBoard2 is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer Mesh is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer Combined Floor Tile is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer Combined Floor Tile (2) is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer Mesh is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer Mesh is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer Combined Floor Tile (1) is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer Mesh is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer Mesh is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer Mesh is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer Mesh is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer Mesh is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+[AssetBundleManager] loading has been unloaded successfully
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+[AssetBundleManager] ingamemenu has been unloaded successfully
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+
+Unloading 1606 unused Assets to reduce memory usage. Loaded Objects now: 42051.
+Total: 33.542900 ms (FindLiveObjects: 1.897900 ms CreateObjectMapping: 2.271500 ms MarkObjects: 22.608900 ms  DeleteObjects: 6.764100 ms)
+
+[AssetBundleManager] Loading InGameMenu from ingamemenu bundle
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+[AssetBundleManager] Loading Asset Bundle : ingamemenu
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Initializing syncronous file request with path : "D:/Jogos/Overcooked-2-SteamRIP.com/Overcooked! 2/Overcooked2_Data/StreamingAssets\Windows/ingamemenu"
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+The referenced script on this Behaviour (Game Object 'T17ScrollView_Consoles') is missing!
+ 
+(Filename:  Line: 1758)
+
+The referenced script on this Behaviour (Game Object '<null>') is missing!
+ 
+(Filename:  Line: 1758)
+
+The referenced script on this Behaviour (Game Object 'Chef') is missing!
+ 
+(Filename:  Line: 1758)
+
+The referenced script on this Behaviour (Game Object 'Chef') is missing!
+ 
+(Filename:  Line: 1758)
+
+The referenced script on this Behaviour (Game Object '<null>') is missing!
+ 
+(Filename:  Line: 1758)
+
+The referenced script on this Behaviour (Game Object 'Chef') is missing!
+ 
+(Filename:  Line: 1758)
+
+The referenced script on this Behaviour (Game Object 'Chef') is missing!
+ 
+(Filename:  Line: 1758)
+
+The referenced script on this Behaviour (Game Object '<null>') is missing!
+ 
+(Filename:  Line: 1758)
+
+The referenced script on this Behaviour (Game Object 'Chef') is missing!
+ 
+(Filename:  Line: 1758)
+
+The referenced script on this Behaviour (Game Object 'Chef') is missing!
+ 
+(Filename:  Line: 1758)
+
+The referenced script on this Behaviour (Game Object '<null>') is missing!
+ 
+(Filename:  Line: 1758)
+
+The referenced script on this Behaviour (Game Object 'Chef') is missing!
+ 
+(Filename:  Line: 1758)
+
+The referenced script on this Behaviour (Game Object 'Chef') is missing!
+ 
+(Filename:  Line: 1758)
+
+The referenced script on this Behaviour (Game Object '<null>') is missing!
+ 
+(Filename:  Line: 1758)
+
+The referenced script on this Behaviour (Game Object 'Chef') is missing!
+ 
+(Filename:  Line: 1758)
+
+The referenced script on this Behaviour (Game Object 'Chef') is missing!
+ 
+(Filename:  Line: 1758)
+
+[AssetBundleManager] Loading Loading from loading bundle
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+[AssetBundleManager] Loading Asset Bundle : loading
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Initializing syncronous file request with path : "D:/Jogos/Overcooked-2-SteamRIP.com/Overcooked! 2/Overcooked2_Data/StreamingAssets\Windows/loading"
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+The referenced script on this Behaviour (Game Object 'NetworkManager') is missing!
+ 
+(Filename:  Line: 1758)
+
+The referenced script on this Behaviour (Game Object 'NetworkManager') is missing!
+ 
+(Filename:  Line: 1758)
+
+Unloading 1 Unused Serialized files (Serialized files now loaded: 139)
+UnloadTime: 18.726200 ms
+
+Unloading 1991 unused Assets to reduce memory usage. Loaded Objects now: 30235.
+Total: 65.206000 ms (FindLiveObjects: 2.147100 ms CreateObjectMapping: 1.885100 ms MarkObjects: 16.176400 ms  DeleteObjects: 44.997000 ms)
+
+[AssetBundleManager] Loading WorldMap from worldmap bundle
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+[AssetBundleManager] Loading Asset Bundle : worldmap
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Initializing file request with path : "D:/Jogos/Overcooked-2-SteamRIP.com/Overcooked! 2/Overcooked2_Data/StreamingAssets\Windows/worldmap"
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Unloading 2 Unused Serialized files (Serialized files now loaded: 141)
+UnloadTime: 2.533200 ms
+The renderer Plane is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+[AssetBundleManager] loading has been unloaded successfully
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+[AssetBundleManager] ingamemenu has been unloaded successfully
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+[AssetBundleManager] s_wizard_school_3_4 has been unloaded successfully
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+[AssetBundleManager] bundle55 has been unloaded successfully
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+
+Unloading 1108 unused Assets to reduce memory usage. Loaded Objects now: 98801.
+Total: 74.202400 ms (FindLiveObjects: 7.380600 ms CreateObjectMapping: 3.673600 ms MarkObjects: 48.405100 ms  DeleteObjects: 14.742000 ms)
 
 BoxColliders does not support negative scale or size.
 The effective box size has been forced positive and is likely to give unexpected collision geometry.
@@ -1237,54 +2231,30 @@ The referenced script on this Behaviour (Game Object 'NetworkManager') is missin
 (Filename:  Line: 1758)
 
 Unloading 2 Unused Serialized files (Serialized files now loaded: 138)
-UnloadTime: 39.667200 ms
+UnloadTime: 46.528800 ms
 
-Unloading 3839 unused Assets to reduce memory usage. Loaded Objects now: 28815.
-Total: 63.543400 ms (FindLiveObjects: 2.617700 ms CreateObjectMapping: 2.349600 ms MarkObjects: 22.241800 ms  DeleteObjects: 36.333900 ms)
+Unloading 3137 unused Assets to reduce memory usage. Loaded Objects now: 29974.
+Total: 60.056800 ms (FindLiveObjects: 2.817900 ms CreateObjectMapping: 2.095800 ms MarkObjects: 15.789300 ms  DeleteObjects: 39.353100 ms)
 
-[AssetBundleManager] Loading s_wizard_school_3_4 from s_wizard_school_3_4 bundle
+[AssetBundleManager] Loading MovingPlatform5 from movingplatform5 bundle
  
 (Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-[AssetBundleManager] Loading Asset Bundle : s_wizard_school_3_4
+[AssetBundleManager] Loading Asset Bundle : movingplatform5
  
 (Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Initializing file request with path : "D:/Jogos/Overcooked-2-SteamRIP.com/Overcooked! 2/Overcooked2_Data/StreamingAssets\Windows/s_wizard_school_3_4"
+Initializing file request with path : "D:/Jogos/Overcooked-2-SteamRIP.com/Overcooked! 2/Overcooked2_Data/StreamingAssets\Windows/movingplatform5"
  
 (Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Initializing file request with path : "D:/Jogos/Overcooked-2-SteamRIP.com/Overcooked! 2/Overcooked2_Data/StreamingAssets\Windows/bundle55"
+Initializing file request with path : "D:/Jogos/Overcooked-2-SteamRIP.com/Overcooked! 2/Overcooked2_Data/StreamingAssets\Windows/bundle80"
  
 (Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
 Unloading 2 Unused Serialized files (Serialized files now loaded: 141)
-UnloadTime: 2.269400 ms
+UnloadTime: 4.622600 ms
 The renderer Mesh is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
- 
-(Filename:  Line: 711)
-
-The renderer Mesh is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
- 
-(Filename:  Line: 711)
-
-The renderer Mesh is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
- 
-(Filename:  Line: 711)
-
-The renderer Mesh is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
- 
-(Filename:  Line: 711)
-
-The renderer Mesh is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
- 
-(Filename:  Line: 711)
-
-The renderer Combined Floor Tile is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
- 
-(Filename:  Line: 711)
-
-The renderer Combined Floor Tile is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
  
 (Filename:  Line: 711)
 
@@ -1304,7 +2274,71 @@ The renderer Mesh is a part of a static batch. Setting the lightmap scale and of
  
 (Filename:  Line: 711)
 
-The renderer Combined Floor Tile (3) is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+The renderer Mesh is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer Mesh is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer Mesh is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer Mesh is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer Mesh is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer Mesh is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer Mesh is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer Mesh is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer Mesh is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer Mesh is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer Mesh is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer Mesh is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer mi_floor_01 (132) is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer Mesh is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer Mesh is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer Mesh is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer ChoppingBoard2 is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
  
 (Filename:  Line: 711)
 
@@ -1316,11 +2350,11 @@ The renderer Mesh is a part of a static batch. Setting the lightmap scale and of
  
 (Filename:  Line: 711)
 
-The renderer Combined Floor Tile is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+The renderer Mesh is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
  
 (Filename:  Line: 711)
 
-The renderer Combined Floor Tile (2) is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+The renderer Mesh is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
  
 (Filename:  Line: 711)
 
@@ -1332,7 +2366,27 @@ The renderer Mesh is a part of a static batch. Setting the lightmap scale and of
  
 (Filename:  Line: 711)
 
-The renderer Combined Floor Tile (1) is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+The renderer Mesh is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer Mesh is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer Mesh is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer Mesh is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer Mesh is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer Mesh is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
  
 (Filename:  Line: 711)
 
@@ -1360,6 +2414,302 @@ The renderer Mesh is a part of a static batch. Setting the lightmap scale and of
  
 (Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
+[AssetBundleManager] ingamemenu has been unloaded successfully
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+[AssetBundleManager] loading has been unloaded successfully
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+
+Unloading 1443 unused Assets to reduce memory usage. Loaded Objects now: 42666.
+Total: 35.636000 ms (FindLiveObjects: 2.515900 ms CreateObjectMapping: 2.163600 ms MarkObjects: 19.265800 ms  DeleteObjects: 11.690200 ms)
+
+[AssetBundleManager] Loading InGameMenu from ingamemenu bundle
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+[AssetBundleManager] Loading Asset Bundle : ingamemenu
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Initializing syncronous file request with path : "D:/Jogos/Overcooked-2-SteamRIP.com/Overcooked! 2/Overcooked2_Data/StreamingAssets\Windows/ingamemenu"
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+The referenced script on this Behaviour (Game Object 'T17ScrollView_Consoles') is missing!
+ 
+(Filename:  Line: 1758)
+
+The referenced script on this Behaviour (Game Object '<null>') is missing!
+ 
+(Filename:  Line: 1758)
+
+The referenced script on this Behaviour (Game Object 'Chef') is missing!
+ 
+(Filename:  Line: 1758)
+
+The referenced script on this Behaviour (Game Object 'Chef') is missing!
+ 
+(Filename:  Line: 1758)
+
+The referenced script on this Behaviour (Game Object '<null>') is missing!
+ 
+(Filename:  Line: 1758)
+
+The referenced script on this Behaviour (Game Object 'Chef') is missing!
+ 
+(Filename:  Line: 1758)
+
+The referenced script on this Behaviour (Game Object 'Chef') is missing!
+ 
+(Filename:  Line: 1758)
+
+The referenced script on this Behaviour (Game Object '<null>') is missing!
+ 
+(Filename:  Line: 1758)
+
+The referenced script on this Behaviour (Game Object 'Chef') is missing!
+ 
+(Filename:  Line: 1758)
+
+The referenced script on this Behaviour (Game Object 'Chef') is missing!
+ 
+(Filename:  Line: 1758)
+
+The referenced script on this Behaviour (Game Object '<null>') is missing!
+ 
+(Filename:  Line: 1758)
+
+The referenced script on this Behaviour (Game Object 'Chef') is missing!
+ 
+(Filename:  Line: 1758)
+
+The referenced script on this Behaviour (Game Object 'Chef') is missing!
+ 
+(Filename:  Line: 1758)
+
+The referenced script on this Behaviour (Game Object '<null>') is missing!
+ 
+(Filename:  Line: 1758)
+
+The referenced script on this Behaviour (Game Object 'Chef') is missing!
+ 
+(Filename:  Line: 1758)
+
+The referenced script on this Behaviour (Game Object 'Chef') is missing!
+ 
+(Filename:  Line: 1758)
+
+[AssetBundleManager] Loading Loading from loading bundle
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+[AssetBundleManager] Loading Asset Bundle : loading
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Initializing syncronous file request with path : "D:/Jogos/Overcooked-2-SteamRIP.com/Overcooked! 2/Overcooked2_Data/StreamingAssets\Windows/loading"
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+The referenced script on this Behaviour (Game Object 'NetworkManager') is missing!
+ 
+(Filename:  Line: 1758)
+
+The referenced script on this Behaviour (Game Object 'NetworkManager') is missing!
+ 
+(Filename:  Line: 1758)
+
+Unloading 1 Unused Serialized files (Serialized files now loaded: 139)
+UnloadTime: 17.294000 ms
+
+Unloading 2270 unused Assets to reduce memory usage. Loaded Objects now: 30192.
+Total: 66.801400 ms (FindLiveObjects: 2.547600 ms CreateObjectMapping: 2.982200 ms MarkObjects: 19.390500 ms  DeleteObjects: 41.880500 ms)
+
+[AssetBundleManager] movingplatform5 has been unloaded successfully
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+[AssetBundleManager] bundle80 has been unloaded successfully
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+[AssetBundleManager] Loading MovingPlatform5 from movingplatform5 bundle
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+[AssetBundleManager] Loading Asset Bundle : movingplatform5
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Initializing file request with path : "D:/Jogos/Overcooked-2-SteamRIP.com/Overcooked! 2/Overcooked2_Data/StreamingAssets\Windows/movingplatform5"
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Initializing file request with path : "D:/Jogos/Overcooked-2-SteamRIP.com/Overcooked! 2/Overcooked2_Data/StreamingAssets\Windows/bundle80"
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Unloading 2 Unused Serialized files (Serialized files now loaded: 139)
+UnloadTime: 3.932700 ms
+The renderer Mesh is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer Mesh is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer ChoppingBoard2 is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer Mesh is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer Mesh is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer Mesh is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer Mesh is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer Mesh is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer Mesh is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer Mesh is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer Mesh is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer Mesh is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer Mesh is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer Mesh is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer Mesh is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer Mesh is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer Mesh is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer mi_floor_01 (132) is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer Mesh is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer Mesh is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer Mesh is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer ChoppingBoard2 is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer ChoppingBoard2 is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer Mesh is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer Mesh is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer Mesh is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer Mesh is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer Mesh is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer Mesh is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer Mesh is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer Mesh is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer Mesh is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer Mesh is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer Mesh is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer Mesh is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer Mesh is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer Mesh is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer Mesh is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer Mesh is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
 [AssetBundleManager] loading has been unloaded successfully
  
 (Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
@@ -1369,8 +2719,8 @@ The renderer Mesh is a part of a static batch. Setting the lightmap scale and of
 (Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
 
-Unloading 1682 unused Assets to reduce memory usage. Loaded Objects now: 41217.
-Total: 34.015700 ms (FindLiveObjects: 2.387100 ms CreateObjectMapping: 2.131800 ms MarkObjects: 19.309600 ms  DeleteObjects: 10.186600 ms)
+Unloading 1364 unused Assets to reduce memory usage. Loaded Objects now: 42679.
+Total: 31.141900 ms (FindLiveObjects: 2.522300 ms CreateObjectMapping: 1.977900 ms MarkObjects: 19.041700 ms  DeleteObjects: 7.599500 ms)
 
 [AssetBundleManager] Loading InGameMenu from ingamemenu bundle
  
@@ -1433,10 +2783,566 @@ The referenced script on this Behaviour (Game Object 'NetworkManager') is missin
 (Filename:  Line: 1758)
 
 Unloading 1 Unused Serialized files (Serialized files now loaded: 139)
-UnloadTime: 26.013000 ms
+UnloadTime: 30.345700 ms
 
-Unloading 1680 unused Assets to reduce memory usage. Loaded Objects now: 30065.
-Total: 63.633000 ms (FindLiveObjects: 2.576100 ms CreateObjectMapping: 1.800900 ms MarkObjects: 15.498200 ms  DeleteObjects: 43.757500 ms)
+Unloading 2024 unused Assets to reduce memory usage. Loaded Objects now: 30309.
+Total: 53.573300 ms (FindLiveObjects: 2.507500 ms CreateObjectMapping: 1.891800 ms MarkObjects: 15.981500 ms  DeleteObjects: 33.192200 ms)
+
+[AssetBundleManager] movingplatform5 has been unloaded successfully
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+[AssetBundleManager] bundle80 has been unloaded successfully
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+[AssetBundleManager] Loading MovingPlatform5 from movingplatform5 bundle
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+[AssetBundleManager] Loading Asset Bundle : movingplatform5
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Initializing file request with path : "D:/Jogos/Overcooked-2-SteamRIP.com/Overcooked! 2/Overcooked2_Data/StreamingAssets\Windows/movingplatform5"
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Initializing file request with path : "D:/Jogos/Overcooked-2-SteamRIP.com/Overcooked! 2/Overcooked2_Data/StreamingAssets\Windows/bundle80"
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Unloading 2 Unused Serialized files (Serialized files now loaded: 139)
+UnloadTime: 4.177900 ms
+The renderer Mesh is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer Mesh is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer ChoppingBoard2 is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer Mesh is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer Mesh is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer Mesh is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer Mesh is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer Mesh is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer Mesh is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer Mesh is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer Mesh is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer Mesh is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer Mesh is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer Mesh is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer Mesh is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer Mesh is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer Mesh is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer mi_floor_01 (132) is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer Mesh is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer Mesh is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer Mesh is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer ChoppingBoard2 is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer ChoppingBoard2 is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer Mesh is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer Mesh is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer Mesh is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer Mesh is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer Mesh is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer Mesh is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer Mesh is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer Mesh is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer Mesh is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer Mesh is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer Mesh is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer Mesh is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer Mesh is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer Mesh is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer Mesh is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer Mesh is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+[AssetBundleManager] loading has been unloaded successfully
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+[AssetBundleManager] ingamemenu has been unloaded successfully
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+
+Unloading 1363 unused Assets to reduce memory usage. Loaded Objects now: 42679.
+Total: 29.757300 ms (FindLiveObjects: 2.432500 ms CreateObjectMapping: 1.990200 ms MarkObjects: 19.017200 ms  DeleteObjects: 6.317000 ms)
+
+[AssetBundleManager] Loading InGameMenu from ingamemenu bundle
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+[AssetBundleManager] Loading Asset Bundle : ingamemenu
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Initializing syncronous file request with path : "D:/Jogos/Overcooked-2-SteamRIP.com/Overcooked! 2/Overcooked2_Data/StreamingAssets\Windows/ingamemenu"
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+The referenced script on this Behaviour (Game Object 'T17ScrollView_Consoles') is missing!
+ 
+(Filename:  Line: 1758)
+
+The referenced script on this Behaviour (Game Object '<null>') is missing!
+ 
+(Filename:  Line: 1758)
+
+The referenced script on this Behaviour (Game Object 'Chef') is missing!
+ 
+(Filename:  Line: 1758)
+
+The referenced script on this Behaviour (Game Object 'Chef') is missing!
+ 
+(Filename:  Line: 1758)
+
+The referenced script on this Behaviour (Game Object '<null>') is missing!
+ 
+(Filename:  Line: 1758)
+
+The referenced script on this Behaviour (Game Object 'Chef') is missing!
+ 
+(Filename:  Line: 1758)
+
+The referenced script on this Behaviour (Game Object 'Chef') is missing!
+ 
+(Filename:  Line: 1758)
+
+[AssetBundleManager] Loading Loading from loading bundle
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+[AssetBundleManager] Loading Asset Bundle : loading
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Initializing syncronous file request with path : "D:/Jogos/Overcooked-2-SteamRIP.com/Overcooked! 2/Overcooked2_Data/StreamingAssets\Windows/loading"
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+The referenced script on this Behaviour (Game Object 'NetworkManager') is missing!
+ 
+(Filename:  Line: 1758)
+
+The referenced script on this Behaviour (Game Object 'NetworkManager') is missing!
+ 
+(Filename:  Line: 1758)
+
+Unloading 1 Unused Serialized files (Serialized files now loaded: 139)
+UnloadTime: 31.501100 ms
+
+Unloading 1877 unused Assets to reduce memory usage. Loaded Objects now: 30423.
+Total: 46.968000 ms (FindLiveObjects: 1.788900 ms CreateObjectMapping: 1.817900 ms MarkObjects: 16.229600 ms  DeleteObjects: 27.131300 ms)
+
+[AssetBundleManager] movingplatform5 has been unloaded successfully
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+[AssetBundleManager] bundle80 has been unloaded successfully
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+[AssetBundleManager] Loading MovingPlatform5 from movingplatform5 bundle
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+[AssetBundleManager] Loading Asset Bundle : movingplatform5
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Initializing file request with path : "D:/Jogos/Overcooked-2-SteamRIP.com/Overcooked! 2/Overcooked2_Data/StreamingAssets\Windows/movingplatform5"
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Initializing file request with path : "D:/Jogos/Overcooked-2-SteamRIP.com/Overcooked! 2/Overcooked2_Data/StreamingAssets\Windows/bundle80"
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Unloading 2 Unused Serialized files (Serialized files now loaded: 139)
+UnloadTime: 3.309100 ms
+The renderer Mesh is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer Mesh is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer ChoppingBoard2 is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer Mesh is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer Mesh is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer Mesh is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer Mesh is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer Mesh is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer Mesh is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer Mesh is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer Mesh is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer Mesh is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer Mesh is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer Mesh is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer Mesh is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer Mesh is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer Mesh is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer mi_floor_01 (132) is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer Mesh is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer Mesh is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer Mesh is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer ChoppingBoard2 is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer ChoppingBoard2 is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer Mesh is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer Mesh is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer Mesh is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer Mesh is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer Mesh is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer Mesh is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer Mesh is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer Mesh is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer Mesh is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer Mesh is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer Mesh is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer Mesh is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer Mesh is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer Mesh is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer Mesh is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+The renderer Mesh is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
+ 
+(Filename:  Line: 711)
+
+[AssetBundleManager] loading has been unloaded successfully
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+[AssetBundleManager] ingamemenu has been unloaded successfully
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+
+Unloading 1363 unused Assets to reduce memory usage. Loaded Objects now: 42685.
+Total: 32.857600 ms (FindLiveObjects: 2.472700 ms CreateObjectMapping: 2.066600 ms MarkObjects: 21.306200 ms  DeleteObjects: 7.011700 ms)
+
+[AssetBundleManager] Loading InGameMenu from ingamemenu bundle
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+[AssetBundleManager] Loading Asset Bundle : ingamemenu
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Initializing syncronous file request with path : "D:/Jogos/Overcooked-2-SteamRIP.com/Overcooked! 2/Overcooked2_Data/StreamingAssets\Windows/ingamemenu"
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+The referenced script on this Behaviour (Game Object 'T17ScrollView_Consoles') is missing!
+ 
+(Filename:  Line: 1758)
+
+The referenced script on this Behaviour (Game Object '<null>') is missing!
+ 
+(Filename:  Line: 1758)
+
+The referenced script on this Behaviour (Game Object 'Chef') is missing!
+ 
+(Filename:  Line: 1758)
+
+The referenced script on this Behaviour (Game Object 'Chef') is missing!
+ 
+(Filename:  Line: 1758)
+
+The referenced script on this Behaviour (Game Object '<null>') is missing!
+ 
+(Filename:  Line: 1758)
+
+The referenced script on this Behaviour (Game Object 'Chef') is missing!
+ 
+(Filename:  Line: 1758)
+
+The referenced script on this Behaviour (Game Object 'Chef') is missing!
+ 
+(Filename:  Line: 1758)
+
+The referenced script on this Behaviour (Game Object '<null>') is missing!
+ 
+(Filename:  Line: 1758)
+
+The referenced script on this Behaviour (Game Object 'Chef') is missing!
+ 
+(Filename:  Line: 1758)
+
+The referenced script on this Behaviour (Game Object 'Chef') is missing!
+ 
+(Filename:  Line: 1758)
+
+The referenced script on this Behaviour (Game Object '<null>') is missing!
+ 
+(Filename:  Line: 1758)
+
+The referenced script on this Behaviour (Game Object 'Chef') is missing!
+ 
+(Filename:  Line: 1758)
+
+The referenced script on this Behaviour (Game Object 'Chef') is missing!
+ 
+(Filename:  Line: 1758)
+
+The referenced script on this Behaviour (Game Object '<null>') is missing!
+ 
+(Filename:  Line: 1758)
+
+The referenced script on this Behaviour (Game Object 'Chef') is missing!
+ 
+(Filename:  Line: 1758)
+
+The referenced script on this Behaviour (Game Object 'Chef') is missing!
+ 
+(Filename:  Line: 1758)
+
+[AssetBundleManager] Loading Loading from loading bundle
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+[AssetBundleManager] Loading Asset Bundle : loading
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Initializing syncronous file request with path : "D:/Jogos/Overcooked-2-SteamRIP.com/Overcooked! 2/Overcooked2_Data/StreamingAssets\Windows/loading"
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+The referenced script on this Behaviour (Game Object 'NetworkManager') is missing!
+ 
+(Filename:  Line: 1758)
+
+The referenced script on this Behaviour (Game Object 'NetworkManager') is missing!
+ 
+(Filename:  Line: 1758)
+
+Unloading 1 Unused Serialized files (Serialized files now loaded: 139)
+UnloadTime: 17.677800 ms
+
+Unloading 2086 unused Assets to reduce memory usage. Loaded Objects now: 30381.
+Total: 50.463400 ms (FindLiveObjects: 3.347200 ms CreateObjectMapping: 1.964800 ms MarkObjects: 16.660200 ms  DeleteObjects: 28.490700 ms)
 
 [AssetBundleManager] Loading WorldMap from worldmap bundle
  
@@ -1451,20 +3357,20 @@ Initializing file request with path : "D:/Jogos/Overcooked-2-SteamRIP.com/Overco
 (Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
 Unloading 2 Unused Serialized files (Serialized files now loaded: 141)
-UnloadTime: 2.873600 ms
+UnloadTime: 3.776500 ms
 The renderer Plane is a part of a static batch. Setting the lightmap scale and offset will not affect the rendering. The scale and offset is already burnt into the lightmapping UVs in the static batch.
  
 (Filename:  Line: 711)
 
-[AssetBundleManager] s_wizard_school_3_4 has been unloaded successfully
- 
-(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-[AssetBundleManager] bundle55 has been unloaded successfully
- 
-(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
 [AssetBundleManager] loading has been unloaded successfully
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+[AssetBundleManager] movingplatform5 has been unloaded successfully
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+[AssetBundleManager] bundle80 has been unloaded successfully
  
 (Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
@@ -1473,8 +3379,8 @@ The renderer Plane is a part of a static batch. Setting the lightmap scale and o
 (Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
 
-Unloading 1111 unused Assets to reduce memory usage. Loaded Objects now: 98637.
-Total: 44.871400 ms (FindLiveObjects: 6.483400 ms CreateObjectMapping: 2.600500 ms MarkObjects: 30.481400 ms  DeleteObjects: 5.305800 ms)
+Unloading 1016 unused Assets to reduce memory usage. Loaded Objects now: 99067.
+Total: 45.209900 ms (FindLiveObjects: 7.072800 ms CreateObjectMapping: 2.864100 ms MarkObjects: 32.106900 ms  DeleteObjects: 3.165700 ms)
 
 BoxColliders does not support negative scale or size.
 The effective box size has been forced positive and is likely to give unexpected collision geometry.
@@ -1974,40 +3880,103 @@ The renderer m_map_building_window_small_01 (1) is a part of a static batch. Set
  
 (Filename:  Line: 711)
 
-NullReferenceException: Object reference not set to an instance of an object
-  at WorldMapOverlayUIController.OnDestroy () [0x00000] in <filename unknown>:0 
+The referenced script on this Behaviour (Game Object '<null>') is missing!
  
-(Filename:  Line: -1)
+(Filename:  Line: 1758)
 
-Releasing render texture that is set as Camera.targetTexture!
+The referenced script on this Behaviour (Game Object 'Chef') is missing!
  
-(Filename:  Line: 3932)
+(Filename:  Line: 1758)
 
-Releasing render texture that is set as Camera.targetTexture!
+The referenced script on this Behaviour (Game Object 'Chef') is missing!
  
-(Filename:  Line: 3932)
+(Filename:  Line: 1758)
 
-Releasing render texture that is set as Camera.targetTexture!
+The referenced script on this Behaviour (Game Object '<null>') is missing!
  
-(Filename:  Line: 3932)
+(Filename:  Line: 1758)
 
-Releasing render texture that is set as Camera.targetTexture!
+The referenced script on this Behaviour (Game Object 'Chef') is missing!
  
-(Filename:  Line: 3932)
+(Filename:  Line: 1758)
 
-Releasing render texture that is set as Camera.targetTexture!
+The referenced script on this Behaviour (Game Object 'Chef') is missing!
  
-(Filename:  Line: 3932)
+(Filename:  Line: 1758)
 
-Releasing render texture that is set as Camera.targetTexture!
+[AssetBundleManager] Loading Loading from loading bundle
  
-(Filename:  Line: 3932)
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Releasing render texture that is set as Camera.targetTexture!
+[AssetBundleManager] Loading Asset Bundle : loading
  
-(Filename:  Line: 3932)
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Releasing render texture that is set as Camera.targetTexture!
+Initializing syncronous file request with path : "D:/Jogos/Overcooked-2-SteamRIP.com/Overcooked! 2/Overcooked2_Data/StreamingAssets\Windows/loading"
  
-(Filename:  Line: 3932)
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+The referenced script on this Behaviour (Game Object 'NetworkManager') is missing!
+ 
+(Filename:  Line: 1758)
+
+The referenced script on this Behaviour (Game Object 'NetworkManager') is missing!
+ 
+(Filename:  Line: 1758)
+
+Unloading 2 Unused Serialized files (Serialized files now loaded: 138)
+UnloadTime: 60.560800 ms
+
+Unloading 3183 unused Assets to reduce memory usage. Loaded Objects now: 30240.
+Total: 57.661800 ms (FindLiveObjects: 2.128500 ms CreateObjectMapping: 1.940000 ms MarkObjects: 16.448500 ms  DeleteObjects: 37.144300 ms)
+
+[AssetBundleManager] Loading StartScreen from startscreen bundle
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+[AssetBundleManager] Loading Asset Bundle : startscreen
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Initializing file request with path : "D:/Jogos/Overcooked-2-SteamRIP.com/Overcooked! 2/Overcooked2_Data/StreamingAssets\Windows/startscreen"
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+The referenced script on this Behaviour (Game Object 'NetworkManager') is missing!
+ 
+(Filename:  Line: 1758)
+
+The referenced script on this Behaviour (Game Object 'NetworkManager') is missing!
+ 
+(Filename:  Line: 1758)
+
+Unloading 2 Unused Serialized files (Serialized files now loaded: 140)
+UnloadTime: 3.411500 ms
+[AssetBundleManager] Loading StartScreen_Base from startscreen_base bundle
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+[AssetBundleManager] Loading Asset Bundle : startscreen_base
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Initializing syncronous file request with path : "D:/Jogos/Overcooked-2-SteamRIP.com/Overcooked! 2/Overcooked2_Data/StreamingAssets\Windows/startscreen_base"
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+[AssetBundleManager] worldmap has been unloaded successfully
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+[AssetBundleManager] loading has been unloaded successfully
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+[AssetBundleManager] ingamemenu has been unloaded successfully
+ 
+(Filename: C:\buildslave\unity\build\artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+
+Unloading 284 unused Assets to reduce memory usage. Loaded Objects now: 38328.
+Total: 32.733500 ms (FindLiveObjects: 2.976100 ms CreateObjectMapping: 2.014300 ms MarkObjects: 22.075100 ms  DeleteObjects: 5.667500 ms)
 
