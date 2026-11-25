@@ -1,0 +1,190 @@
+{
+  "loadedMods": {},
+  "modData": {
+    "Pale Court": {
+      "CompletionIsma": {
+        "hasBeenSeen": false,
+        "isUnlocked": false,
+        "completedTier1": false,
+        "completedTier2": false,
+        "completedTier3": false,
+        "seenTier3Unlock": false,
+        "usingAltVersion": false
+      },
+      "CompletionIsma2": {
+        "hasBeenSeen": false,
+        "isUnlocked": false,
+        "completedTier1": false,
+        "completedTier2": false,
+        "completedTier3": false,
+        "seenTier3Unlock": false,
+        "usingAltVersion": false
+      },
+      "CompletionZemer": {
+        "hasBeenSeen": false,
+        "isUnlocked": false,
+        "completedTier1": false,
+        "completedTier2": false,
+        "completedTier3": false,
+        "seenTier3Unlock": false,
+        "usingAltVersion": false
+      },
+      "CompletionZemer2": {
+        "hasBeenSeen": false,
+        "isUnlocked": false,
+        "completedTier1": false,
+        "completedTier2": false,
+        "completedTier3": false,
+        "seenTier3Unlock": false,
+        "usingAltVersion": false
+      },
+      "CompletionDryya": {
+        "hasBeenSeen": true,
+        "isUnlocked": true,
+        "completedTier1": false,
+        "completedTier2": false,
+        "completedTier3": false,
+        "seenTier3Unlock": false,
+        "usingAltVersion": false
+      },
+      "CompletionHegemol": {
+        "hasBeenSeen": false,
+        "isUnlocked": false,
+        "completedTier1": false,
+        "completedTier2": false,
+        "completedTier3": false,
+        "seenTier3Unlock": false,
+        "usingAltVersion": false
+      },
+      "CompletionMawlek2": {
+        "hasBeenSeen": true,
+        "isUnlocked": true,
+        "completedTier1": false,
+        "completedTier2": false,
+        "completedTier3": false,
+        "seenTier3Unlock": false,
+        "usingAltVersion": false
+      },
+      "IsmaEntryData": {
+        "killsremaining": 1,
+        "haskilled": false,
+        "newentry": true,
+        "Hidden": true
+      },
+      "ZemerEntryData": {
+        "killsremaining": 1,
+        "haskilled": false,
+        "newentry": true,
+        "Hidden": true
+      },
+      "DryyaEntryData": {
+        "killsremaining": 0,
+        "haskilled": true,
+        "newentry": false,
+        "Hidden": true
+      },
+      "HegemolEntryData": {
+        "killsremaining": 1,
+        "haskilled": false,
+        "newentry": true,
+        "Hidden": true
+      },
+      "Mawlek2EntryData": {
+        "killsremaining": 1,
+        "haskilled": false,
+        "newentry": true,
+        "Hidden": true
+      },
+      "IsmaOWWinCount": 0,
+      "DryyaOWWinCount": 1,
+      "HegOWWinCount": 0,
+      "ZemerOWWinCount": 0,
+      "AltStatueIsma": false,
+      "AltStatueZemer": false,
+      "AltStatueMawlek": false,
+      "respawnMarkerName": "RestBench",
+      "respawnScene": "GG_Atrium",
+      "newCharms": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "gotCharms": [
+        true,
+        false,
+        false,
+        true
+      ],
+      "equippedCharms": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "upgradedCharm_10": false,
+      "GreetedNailsmith": false,
+      "GreetedSheo": false,
+      "IsmaFirstConvo1": false,
+      "IsmaFirstConvo2": false,
+      "IsmaSecondConvo1": false,
+      "IsmaSecondConvo2": false,
+      "IsmaThirdConvo1": false,
+      "IsmaCharmConvo": false,
+      "OgrimFirstConvo1": false,
+      "OgrimFirstConvo2": false,
+      "OgrimSecondConvo1": false,
+      "OgrimSecondConvo2": false,
+      "OgrimThirdConvo1": false,
+      "OgrimCharmConvo": false,
+      "DryyaFirstConvo1": false,
+      "DryyaFirstConvo2": false,
+      "DryyaSecondConvo1": false,
+      "DryyaSecondConvo2": false,
+      "DryyaThirdConvo1": false,
+      "DryyaCharmConvo": false,
+      "DryyaOldNailConvo": false,
+      "HegemolFirstConvo1": false,
+      "HegemolFirstConvo2": false,
+      "HegemolSecondConvo1": false,
+      "HegemolSecondConvo2": false,
+      "HegemolThirdConvo1": false,
+      "HegemolCharmConvo": false,
+      "ZemerFirstConvo1": false,
+      "ZemerFirstConvo2": false,
+      "ZemerSecondConvo1": false,
+      "ZemerSecondConvo2": false,
+      "ZemerThirdConvo1": false,
+      "ZemerCharmConvo": false,
+      "WLadyKHConvo1": false,
+      "WLadyKHConvo2": false,
+      "WLadyMPConvo1": true,
+      "WLadyMPConvo2": true,
+      "WLadyBHConvo1": false,
+      "WLadyBHConvo2": false,
+      "WLadyVLConvo1": false,
+      "WLadyVLConvo2": false,
+      "WLadyAllConvo1": false,
+      "WLadyAllConvo2": false,
+      "GodseekerSave": false,
+      "HasSeenWorkshopRaised": true,
+      "SeenChampionsCall": false,
+      "ChampionsCallClears": 0,
+      "ChampionsCallHitless": false,
+      "HasSeenCredits": false,
+      "IndicatorActivated": true,
+      "IndicatorPosition1": {
+        "x": -0.98651123,
+        "y": -9.095715,
+        "z": 0.0
+      },
+      "IndicatorPosition2": {
+        "x": 0.142272949,
+        "y": -9.089291,
+        "z": 0.0
+      },
+      "UnlockedChampionsCall": false
+    },
+    "SFCore": {}
+  }
+}
